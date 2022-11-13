@@ -5,7 +5,7 @@ date:   2020-07-011 21:21:53 +00:00
 image: /images/ccd2017.png
 categories: research
 authors: "Usman Allauddin, <strong>Rafay Mohiuddin</strong>, Hafiz Mohammad Usman Khan, Naseem Uddin, Waqar A. Khan"
-subtitle: "Wiley"
+subtitle: "Wiley "
 venue: "Journal of Heat Transfer"
 arxiv: https://doi.org/10.1002/htj.21986
 ---
