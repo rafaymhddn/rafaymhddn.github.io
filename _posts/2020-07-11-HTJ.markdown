@@ -7,7 +7,7 @@ categories: research
 authors: "Usman Allauddin, <strong>Rafay Mohiuddin</strong>, Hafiz Mohammad Usman Khan, Naseem Uddin, Waqar A. Khan"
 subtitle: "Wiley "
 venue: "Journal of Heat Transfer"
-arxiv: https://doi.org/10.1002/htj.21986
+paper: https://doi.org/10.1002/htj.21986
 ---
 
 In this study the influence of nanofluid and finns for heat enhancement is numerically investigated at **macro scale** for meeting cooling requiremnt of advanced electronic devices. Different concentration of alumina oxide–water nanofluid are introduced through small jets in crossflow stream over finned channels.
