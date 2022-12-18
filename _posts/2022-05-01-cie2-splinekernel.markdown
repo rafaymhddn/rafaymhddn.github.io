@@ -6,7 +6,7 @@ image: /images/cie2-splinekernel.png
 categories: TUM
 author: "Rafay"
 subtitle: "spline-kernel"
-course: "TUM-CIE2: Computation in Engineering II"
+course: "CIE2: Computation in Engineering II"
 ---
 
 C++ implimentation for spline formation using approximation.

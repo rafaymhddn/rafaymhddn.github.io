@@ -7,7 +7,7 @@ categories: TUM
 author: "Rafay"
 subtitle: "fem"
 paper: /pdfs/cs224w.pdf
-course: "TUM-CIE2: Computation in Engineering II"
+course: "CIE2: Computation in Engineering II"
 ---
 
 FE code (C++) that discretizes a two-dimensional Poisson’s equation using B-Spline basis functions.
