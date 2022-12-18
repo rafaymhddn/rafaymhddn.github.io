@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Simple Shop"
+date:   2023-01-15 22:20:59 +00:00
+image: /images/psd.png
+categories: TUM
+author: "Rafay"
+subtitle: "psd"
+paper: 
+code:
+course: "PSD: Software Lab"
+---
+
+Simple tax calculator and invoic maker app in C#. 
