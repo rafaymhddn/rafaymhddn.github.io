@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Real Time Optical Process Monitering & Controll for Additive Manufacturing"
-date:   2023-01-15 22:20:59 +00:00
+date:   2022-12-01 22:20:59 +00:00
 image: /images/sl.png
 categories: TUM
 author: "Rafay"
