@@ -6,7 +6,7 @@ image: /images/cie2-bsplinefem.png
 categories: TUM
 author: "Rafay"
 subtitle: "fem"
-paper: /pdfs/cs224w.pdf
+paper: 
 course: "CIE2: Computation in Engineering II"
 ---
 

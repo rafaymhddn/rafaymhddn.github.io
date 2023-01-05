@@ -6,7 +6,7 @@ image: /images/sl-img.png
 categories: TUM
 author: "Rafay"
 subtitle: "sl"
-poster: "sl-poster.pdf" 
+poster: /pdfs/sl-poster.pdf 
 code:
 course: "SL: Software Lab"
 ---
