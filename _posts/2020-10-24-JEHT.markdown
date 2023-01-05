@@ -2,7 +2,7 @@
 layout: post
 title:  "Nanoscale heat transfer investigation of an array of impinging jet systems with different working fluids under crossflow with and without pin fins"
 date:   2020-10-24 21:21:53 +00:00
-image: /images/2020-JEHT.png
+image: /images/paper-micro.png
 categories: research
 authors: "Usman Allauddin, Tariq Jamil, Muhammad Shakaib, H.M. Usman Khan, <strong>Rafay Mohiuddin</strong> ,M. Saad Saeed, Haseeb Ahsan & Naseem Uddin"
 subtitle: "Begell House"
