@@ -11,4 +11,4 @@ code:
 course: "SL: Software Lab"
 ---
 
-Real time optical process monitering and controll using RGBD camera (ZED mini) for additve manufacting system using 6DOF robotic arm (UR10) for application in construction.
+Real-time optical process monitoring and control using RGBD camera (ZED mini) for additive manufacturing system using a 6DOF robotic arm (UR10) for application in construction.

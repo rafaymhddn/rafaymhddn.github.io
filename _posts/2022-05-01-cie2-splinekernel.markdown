@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Spline Kernal (BSpline)"
-date:   2022-05-01 22:20:59 +00:00
+date:   2022-06-01 22:20:59 +00:00
 image: /images/cie2-splinekernel.png
 categories: TUM
 author: "Rafay"
