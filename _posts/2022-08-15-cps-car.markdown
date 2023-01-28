@@ -11,4 +11,4 @@ code:
 course: "CPS: Cyber Physical Systems Lab"
 ---
 
-Implimentation of follow the gap, follow the wall on F1Tenth car.
+Implementation of reactive autonomous navigation strategies on F1Tenth car.

@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "Real Time Optical Process Monitering & Controll for Additive Manufacturing"
-date:   2022-12-01 22:20:59 +00:00
+date:   2023-01-10 22:20:59 +00:00
 image: /images/sl-img.png
 categories: TUM
 author: "Rafay"
 subtitle: "sl"
-poster: /pdfs/sl-poster.pdf 
+poster: /pdfs/sl_poster.pdf
+paper:
 code:
 course: "SL: Software Lab"
 ---

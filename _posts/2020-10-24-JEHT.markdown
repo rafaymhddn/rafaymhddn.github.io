@@ -6,8 +6,8 @@ image: /images/paper-micro.png
 categories: research
 authors: "Usman Allauddin, Tariq Jamil, Muhammad Shakaib, H.M. Usman Khan, <strong>Rafay Mohiuddin</strong> ,M. Saad Saeed, Haseeb Ahsan & Naseem Uddin"
 subtitle: "Begell House"
-venue: "Journal of Enhnaved Heat Transfer"
+venue: "Journal of Enhnaced Heat Transfer"
 paper: https://www.dl.begellhouse.com/references/4c8f5faa331b09ea,212bf76947bffc03,5aa059fb1b898ef8.html
 ---
 
-In this study the influence of nanofluid for heat enhancement is numerically investigated at **micro scale** for meeting cooling requiremnt of advanced electronic devices. Different concentration of alumina oxide–water nanofluid are introduced through small jets in crossflow stream over macro pin finned channels.
+In this study, the influence of nanofluid for heat enhancement is numerically investigated at **micro scale** for meeting cooling requiremnt of advanced electronic devices. Different concentrations of alumina oxide–water nanofluid are introduced through small jets in crossflow stream over macro pin finned channels.

@@ -11,4 +11,4 @@ code:
 course: "CPS: Cyber Physical Systems Lab"
 ---
 
-Implimentation and comparision of reactive navigation stratergies in simulation environmnet. 
+Implementation and comparison of reactive autonomous navigation strategies in simulated environment.
