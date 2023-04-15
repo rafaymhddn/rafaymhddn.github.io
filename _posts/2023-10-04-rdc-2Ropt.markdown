@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2R-planar robot: Bi-level optimisation"
+title:  "2R-planar robot: Bi-level Optimisation"
 date:   2023-4-10 22:20:59 +00:00
 image: /images/rdc-2Ropt.png
 categories: TUM
@@ -12,4 +12,4 @@ code:
 course: "RDC: Numerical Optimizationnn for Robotic Design and Control"
 ---
 
-Finding optimal control input and physical design parameters to achive maximum workspace with minimum energy required.
+Optimal control input and physical parameters to achive maximum workspace with minimum energy required for 2R-planner robot.

@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Attachment Point Optimization"
+date:   2023-4-10 22:20:59 +00:00
+image: /images/rdc-apo.png
+categories: TUM
+author: "Rafay"
+subtitle: "rdc"
+poster: 
+paper:
+code:
+course: "RDC: Numerical Optimizationnn for Robotic Design and Control"
+---
+
+Optimal attachment point location to achive optimal wrench feasible workspace (minimim positive tension reqquired) for cable driven parallel robot.
