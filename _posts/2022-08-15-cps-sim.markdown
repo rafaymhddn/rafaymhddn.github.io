@@ -2,7 +2,7 @@
 layout: post
 title:  "F1Tenth Autonomous Car - Simulation"
 date:   2022-09-07 22:20:59 +00:00
-image: /images/cps-sim.png
+image: /images/cps-sim.gif
 categories: TUM
 author: "Rafay"
 subtitle: "cps"
