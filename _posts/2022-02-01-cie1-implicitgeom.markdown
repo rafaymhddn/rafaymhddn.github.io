@@ -6,7 +6,7 @@ image: /images/cie1-implicitgeom.png
 categories: TUM
 author: "Rafay"
 subtitle: "fem"
-course: "CIE1: Computation in Engineering I"
+course: "CIE1: Computation in Engineering II"
 ---
 
 Inplimentation of implicit geometry formation using quad tree in C++.
