@@ -5,8 +5,8 @@ date:   2023-05-04 21:21:53 +00:00
 image: /images/sl-img.png
 categories: research
 authors: "Martin Slepicka*, <strong>Rafay Mohiuddin*</strong>, Miranda Cruz Policroniades*, André Borrmann"
-subtitle: "ISARC"
+subtitle: "ISARC 2023"
+venue: 40th International Symposium on Automation and Robotics in Construction
 
 ---
 
-In this study, the influence of nanofluid and finns for heat enhancement is numerically investigated at **macro scale** for meeting cooling requiremnt of advanced electronic devices. Different concentrations of alumina oxide–water nanofluid are introduced through small jets in crossflow stream over finned channels.
