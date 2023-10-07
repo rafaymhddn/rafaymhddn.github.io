@@ -2,7 +2,7 @@
 layout: post
 title:  "Advanced Deep Learning for Physics"
 date:   2023-08-01 22:20:00 +00:00
-image: /images/adl4p_flow.gif
+image: /images/adl4p_flow2.gif
 categories: TUM
 author: "Rafay"
 subtitle: "adl4p"
