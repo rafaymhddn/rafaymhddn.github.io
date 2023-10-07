@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Kuramoto-Sivashinsky Learning"
+date:   2023-08-01 22:20:50 +00:00
+image: /images/adl4p_ks.png
+categories: TUM
+author: "Rafay"
+subtitle: "adl4p"
+poster: 
+paper:
+code:
+course: "ADL4P: Advanced Deep Learning for Physics"
+---
+
+Learnining using differentiable solver for Kuramoto-Sivashinsky equation.
