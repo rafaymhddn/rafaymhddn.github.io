@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Advanced Deep Learning for Physics"
+date:   2023-08-01 22:20:00 +00:00
+image: /images/adl4p_flow.gif
+categories: TUM
+author: "Rafay"
+subtitle: "adl4p"
+poster: 
+paper:
+code:
+course: "ADL4P: Advanced Deep Learning for Physics"
+---
+
+Optimization, Differential Simulation, Improved Updates, Time Series Prediction, Inverse Design,Neural/Baysian ODE, GAN and RL.  

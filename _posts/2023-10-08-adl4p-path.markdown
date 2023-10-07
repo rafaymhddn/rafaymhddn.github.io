@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Optimal Path: Differentiable Physics"
+date:   2023-4-10 22:20:59 +00:00
+image: /images/adl4p-path.png
+categories: TUM
+author: "Rafay"
+subtitle: "adl4p"
+poster: 
+paper:
+code:
+course: "ADL4P: Advanced Deep Learning for Physics"
+---
+
+Differential physics training to find optimal path.
