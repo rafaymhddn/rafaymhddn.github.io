@@ -4,9 +4,10 @@ title:  "Optical Process Control for extrusion-based Additive Manufacturing meth
 date:   2023-05-04 21:21:53 +00:00
 image: /images/sl-paper.png
 categories: research
-authors: "Martin Slepicka*, <strong>Rafay Mohiuddin*</strong>, Miranda Cruz Policroniades*, André Borrmann"
+authors: "<strong>Rafay Mohiuddin</strong>, Miranda Cruz Policroniades, Martin Slepicka, André Borrmann"
 subtitle: "ISARC 2023"
 venue: 40th International Symposium on Automation and Robotics in Construction
+paper: https://doi.org/10.22260/ISARC2023/0015
 
 ---
 
