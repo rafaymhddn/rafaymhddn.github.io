@@ -1,6 +1,10 @@
 ---
 ---
 
+//
+// IMPORTS
+//
+
 //@import "reset";
 //@import "variables";
 // Syntax highlighting @import is at the bottom of this file
@@ -8,7 +12,6 @@
 /**************/
 /* BASE RULES */
 /**************/
-
 a {
   color: #1772d0;
   text-decoration: none;
@@ -26,19 +29,19 @@ th,
 tr,
 p,
 a {
-  font-family: 'mathpazo', Palatino, 'Palatino Linotype', 'Book Antiqua', serif;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
   font-display: auto;
 }
 
 strong {
-  font-family: 'mathpazo', Palatino, 'Palatino Linotype', 'Book Antiqua', serif;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
   font-display: auto;
 }
 
 h2 {
-  font-family: 'mathpazo', Palatino, 'Palatino Linotype', 'Book Antiqua', serif;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 22px;
   font-display: auto;
   font-weight: normal;
@@ -48,7 +51,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'mathpazo', Palatino, 'Palatino Linotype', 'Book Antiqua', serif;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 700;
   font-display: auto;
@@ -58,7 +61,7 @@ h3 {
 }
 
 h1 {
-  font-family: 'mathpazo', Palatino, 'Palatino Linotype', 'Book Antiqua', serif;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 32px;
   font-weight: normal;
   font-display: auto;
@@ -68,6 +71,7 @@ h1 {
   margin-block-end: 14px;
   margin-left: 0px;
   margin-right: 0px;
+
 }
 
 .one {
