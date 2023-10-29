@@ -12,4 +12,4 @@ code:
 course: "ADL4P: Advanced Deep Learning for Physics"
 ---
 
-Exercise for Optimization, Differential Simulation, Time Series Prediction, Inverse Design etc. 
+Optimization, Differential Simulation, Time Series Prediction, Inverse Design etc. 
