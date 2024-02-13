@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Nanoscale heat transfer investigation of an array of impinging jet systems with different working fluids under crossflow with and without pin fins"
+title:  "Nanoscale heat transfer investigation of an array of impinging jet systems with different working fluids under crossflow with and without micro pin fins"
 date:   2020-10-24 21:21:53 +00:00
 image: /images/paper-micro.png
 categories: research

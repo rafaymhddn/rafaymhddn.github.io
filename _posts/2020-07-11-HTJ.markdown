@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Nanoscale heat transfer investigation of an array of impinging jet systems with different working fluids under crossflow with and without pin fins"
-date:   2020-07-11 21:21:53 +00:00
+date:   2020-11-11 21:21:53 +00:00
 image: /images/paper-macro.png
 categories: research
 authors: "Usman Allauddin, <strong>Rafay Mohiuddin</strong>, Hafiz Mohammad Usman Khan, Naseem Uddin, Waqar A. Khan"

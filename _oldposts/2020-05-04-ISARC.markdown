@@ -7,7 +7,7 @@ categories: research
 authors: "<strong>Rafay Mohiuddin</strong>, Miranda Cruz Policroniades, Martin Slepicka, André Borrmann"
 subtitle: "ISARC 2023"
 venue: 40th International Symposium on Automation and Robotics in Construction
-paper: https://doi.org/10.22260/ISARC2023/0015
+#paper: https://doi.org/10.22260/ISARC2023/0015
 
 ---
 
