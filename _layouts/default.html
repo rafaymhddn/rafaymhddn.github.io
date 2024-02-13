@@ -1,14 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<head>
-  <!-- Google tag (gtag.js) -->
+<!--head>
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3NEVL70KSZ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-3NEVL70KSZ');
   </script>
   
@@ -23,7 +22,38 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
+</head-->
+
+<head>
+  <title>{{ site.name }}</title>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta name="author" content="{{ site.name }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3NEVL70KSZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3NEVL70KSZ');
+  </script>
+
+  <script>
+    fetch('https://ipapi.co/country/')
+      .then(response => response.text())
+      .then(country => {
+        if (country === 'CN' || country === 'RU' | country === 'IR') { // Replace 'CN' and 'RU' with the ISO codes of countries you wish to block
+          window.location.href = 'www.google.com'; // URL to redirect blocked users
+        }
+      })
+      .catch(error => console.error('Error determining country:', error));
+  </script>
 </head>
+
 
 
 
