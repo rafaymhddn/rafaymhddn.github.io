@@ -57,14 +57,15 @@
 
   <script>
     fetch('https://ipapi.co/country/')
-      .then(response => response.text())
-      .then(country => {
-        if (country === 'CN' || country === 'RU' | country === 'IR') { // Replace 'CN' and 'RU' with the ISO codes of countries you wish to block
-          window.location.href = 'www.google.com'; // URL to redirect blocked users
-        }
-      })
-      .catch(error => console.error('Error determining country:', error));
+        .then(response => response.text())
+        .then(country => {
+            if (country === 'CN' || country === 'RU' || country === 'IR') { // Add or replace country codes as needed
+                window.location.href = 'https://www.google.com'; // URL to redirect blocked users, including 'https://'
+            }
+        })
+        .catch(error => console.error('Error determining country:', error));
   </script>
+
 </head>
 
 
