@@ -3,12 +3,12 @@ layout: post
 title:  "AI for Science FourCastNet"
 date:   2024-06-26 22:20:59 +00:00
 image: /images/fcnet.png
-categories: TUM
+categories: EuroCC2
 author: "Rafay"
 subtitle: "AI4Science"
 poster: 
 paper:
-course: "AI for Science Bootcamp EcuoCC2"
+course: "AI for Science Bootcamp"
 ---
 
 Training NeuralOperator, FourCastNet on nvidia gpu cluster. 
