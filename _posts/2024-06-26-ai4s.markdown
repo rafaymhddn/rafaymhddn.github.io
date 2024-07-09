@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Advanced Deep Learning for Physics"
+title:  "AI for Science FourCastNet"
 date:   2024-06-26 22:20:59 +00:00
-image: /images/fcnet.gif
+image: /images/fcnet.png
 categories: TUM
 author: "Rafay"
 subtitle: "AI4Science"
