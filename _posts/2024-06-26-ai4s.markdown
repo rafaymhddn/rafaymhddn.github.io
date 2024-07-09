@@ -8,7 +8,6 @@ author: "Rafay"
 subtitle: "AI4Science"
 poster: 
 paper:
-code: https://github.com/rafaymhddn/End-to-End-AI-for-Science
 course: "AI for Science Bootcamp EcuoCC2"
 ---
 
