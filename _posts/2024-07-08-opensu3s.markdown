@@ -4,10 +4,10 @@ title:  "OpenSU3D: Open Word 3D Scene Understanding using Foundation Models"
 date:   2024-07-8 22:20:59 +00:00
 image: /images/opensu3d.png
 categories: research
-author: "<strong>Rafay Mohiuddin</strong>,Sai Manoj Prakhya, Fiona Collins, Ziyuan Liu, Andre Borrmann"
-subtitle: "* in review*"
+authors: "<strong>Rafay Mohiuddin</strong>,Sai Manoj Prakhya, Fiona Collins, Ziyuan Liu, Andre Borrmann"
+subtitle: "(in review)"
 venue: 
-paper: https://opensu3d.github.io/
+website: https://opensu3d.github.io/
 code:
 ---
 
