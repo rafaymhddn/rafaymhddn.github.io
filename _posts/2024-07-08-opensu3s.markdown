@@ -7,7 +7,7 @@ categories: research
 authors: "<strong>Rafay Mohiuddin</strong>,Sai Manoj Prakhya, Fiona Collins, Ziyuan Liu, Andre Borrmann"
 subtitle: "(in review)"
 venue: 
-website: https://opensu3d.github.io/
+paper: https://opensu3d.github.io/
 code:
 ---
 
