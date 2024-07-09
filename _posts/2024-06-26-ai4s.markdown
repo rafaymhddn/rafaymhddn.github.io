@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Advanced Deep Learning for Physics"
+date:   2024-06-26 22:20:59 +00:00
+image: /images/fcnet.gif
+categories: TUM
+author: "Rafay"
+subtitle: "AI4Science"
+poster: 
+paper:
+code: https://github.com/rafaymhddn/End-to-End-AI-for-Science
+course: "AI for Science Bootcamp EcuoCC2"
+---
+
+Training NeuralOperator, FourCastNet on nvidia gpu cluster. 
