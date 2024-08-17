@@ -8,5 +8,6 @@ authors: "Usman Allauddin, <strong>Rafay Mohiuddin</strong>, Hafiz Mohammad Usma
 subtitle: "Wiley "
 venue: "Journal of Heat Transfer"
 paper: https://doi.org/10.1002/htj.21986
+web: https://onlinelibrary.wiley.com/doi/10.1002/htj.21986
 ---
 
