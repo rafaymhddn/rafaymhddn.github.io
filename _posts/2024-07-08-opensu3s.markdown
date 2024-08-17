@@ -9,6 +9,6 @@ subtitle: "(in review)"
 venue: 
 paper: https://arxiv.org/pdf/2407.14279
 web: https://opensu3d.github.io/
-code: https://github.com/opensu3d/opensu3d.github.io
+#code: https://github.com/opensu3d/opensu3d.github.io
 ---
 
