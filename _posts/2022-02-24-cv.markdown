@@ -9,6 +9,6 @@ subtitle: " "
 poster: 
 paper:
 code:
-course: 
+course: " "
 ---
 Implementation of Faster RCNN in pytorch + other CNN based projects object detection, facial keypoint, semantic segmentation ...

@@ -9,6 +9,6 @@ subtitle: " "
 poster: 
 paper:
 code:
-course: 
+course: " "
 ---
 Implementation of DDPM paper in pytorch, training on MNIST and CIFAR10
