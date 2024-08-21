@@ -5,10 +5,10 @@ date:   2022-02-24 22:20:59 +00:00
 image: /images/rcnn.png
 categories: "side project"
 author: "Rafay"
-subtitle: 
+subtitle: " "
 poster: 
 paper:
 code:
 course: 
 ---
-Implementation of Faster RCNN in pytorch
+Implementation of Faster RCNN in pytorch + other CNN based projects object detection, facial keypoint, semantic segmentation ...
