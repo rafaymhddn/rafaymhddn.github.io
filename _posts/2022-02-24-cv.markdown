@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Faster R-CNN Implementation"
+date:   2022-02-24 22:20:59 +00:00
+image: /images/rcnn.png
+categories: "side project"
+author: "Rafay"
+subtitle: 
+poster: 
+paper:
+code:
+course: 
+---
+Implementation of Faster RCNN in pytorch
