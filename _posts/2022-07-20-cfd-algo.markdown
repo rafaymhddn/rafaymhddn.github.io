@@ -9,6 +9,7 @@ subtitle: "cfd"
 paper: 
 code: 
 course: "CFD: Computationl Fluid Dynamics"
+code: 
 ---
 
 Numerical methods in computational fluid dynamics. 1D-2D advection diffusion equation, 2D Navier Stokes Equation, explicit/implicit euler & central differnce scheme, crank nichlson analysis, runge kutta, gauss seidel, rhi-chow interpolation.

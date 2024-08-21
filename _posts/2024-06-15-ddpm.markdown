@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Diffsion Model (DDPM)"
+date:   2024-06-15 22:20:59 +00:00
+image: /images/ddpm_mnist.gif
+categories: 
+author: "Rafay"
+subtitle: 
+poster: 
+paper:
+code:
+course: 
+---
+Implementation of DDPM paper in pytorch, training on MNIST and CIFAR10
