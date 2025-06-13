@@ -1,6 +1,28 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
+<!--head>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3NEVL70KSZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3NEVL70KSZ');
+  </script>
+  
+  <title>{{ site.name }}</title>
+
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+  <meta name="author" content="{{ site.name }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+</head-->
 
 <head>
   <title>{{ site.name }}</title>
@@ -20,63 +42,6 @@
         }
         .castoro {
             font-family: 'Castoro', serif;
-        }
-
-        /* Modern Navigation Bar Styles */
-        .nav-container {
-            width: 100%;
-            background-color: #ffffff;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .nav-menu {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0.5rem 0;
-            margin: 0;
-            list-style: none;
-        }
-
-        .nav-item {
-            margin: 0 0.5rem;
-        }
-
-        .nav-link {
-            color: #333;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            padding: 0.3rem 0.6rem;
-            border-radius: 3px;
-            transition: all 0.2s ease;
-        }
-
-        .nav-link:hover {
-            background-color: #f5f5f5;
-            color: #1a73e8;
-        }
-
-        .nav-link.active {
-            color: #1a73e8;
-            background-color: #e8f0fe;
-        }
-
-        @media (max-width: 768px) {
-            .nav-menu {
-                flex-wrap: wrap;
-                padding: 0.3rem 0;
-            }
-            .nav-item {
-                margin: 0.15rem;
-            }
-            .nav-link {
-                font-size: 0.8rem;
-                padding: 0.2rem 0.4rem;
-            }
         }
     </style>
 
@@ -112,16 +77,28 @@
       <td style="padding:0px">
 
 <!-- Section Tab -->
-        <div class="nav-container">
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#news" class="nav-link" onclick="Expand('news')">News</a></li>
-                <li class="nav-item"><a href="#education" class="nav-link" onclick="Expand('education')">Education</a></li>
-                <li class="nav-item"><a href="#experience" class="nav-link" onclick="Expand('experience')">Experience</a></li>
-                <li class="nav-item"><a href="#publications" class="nav-link" onclick="Expand('publications')">Publications</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link" onclick="Expand('projects')">Projects</a></li>
-                <li class="nav-item"><a href="mailto:rafaymohiuddin7@gmail.com" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">                                    
+            <td style="padding:0.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <a href="#news" onclick=Expand("news")>News</a>
+                &nbsp;/&nbsp;
+                <a href="#education" onclick=Expand("education")>Education</a>
+                &nbsp;/&nbsp;
+                <a href="#experience" onclick=Expand("experience")>Experience</a>
+                &nbsp;/&nbsp;
+                <a href="#publications" onclick=Expand("publications")>Publications</a>
+                &nbsp;/&nbsp;
+                <a href="#projects" onclick=Expand("projects")>Projects</a>
+                &nbsp;/&nbsp;
+                <a href="mailto:rafaymohiuddin7@gmail.com">Contact</a>
+                &nbsp;/&nbsp;
+                <a href="mailto:rafaymohiuddin7@gmail.com">&#9654; More ...</a>                
+              </p>
+            </td>
+          </tr>            
+        </table>
 
 <!-- Name -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -141,30 +118,37 @@
             <td style="padding:2.5%;width:60%;vertical-align:middle">
             
               <br>
-              
-              <p align="justify">
-                Hello, I'm Rafay 👋 — a Master's graduate from the <a href="https://www.ed.tum.de/en/ed/home-1/">TUM School of Engineering and Design</a>, 
-                with a focus on scientific computing, robotics, and 3D computer vision. 
-                My thesis research explored efficient and scalable methods for <a href="http://opensu3d.github.io/">open-world 3D scene understanding (ICRA'25)</a> using 2D foundation models and LLM.
-              </p>
-              
-              <p align="justify">
-                I previously worked as a Robotics Research Intern at the <a href="https://huaweiresearchcentergermanyaustria.teamtailor.com/departments/intelligent-cloud-technologies-laboratory">Huawei Munich Research Center</a>, focusing on lifelong localization and mapping, and as a Student Research Assistant at the <a href="https://www.cee.ed.tum.de/cms/home/">Chair of Computational Modeling and Simulation</a>, where I contributed to robotics and simulation-based projects.
-              </p>
-              
-              <p align="justify">
-                My core interests lie at the intersection of robotics, 3D perception, machine learning, and physics simulation — with hands-on experience in developing and deploying research-driven solutions across these domains.
-              </p>
-              
+              <!--p align="justify">Hi 👋, I'm Rafay! I work with mathematical models, convert them to code to solve problems in engineering and science.  </p--> 
 
-              <p style="text-align:center; font-size: 1.00rem; font-weight: 500;">
+          
+              <p align="justify">
+                Greetings, I'm Rafay 👋. I hold a Master’s degree from the <a href="https://www.ed.tum.de/en/ed/home-1/">TUM School of Engineering and Design</a>, where I focused on scientific computing, robotics and 3D computer vision. My master's thesis, conducted at the <a href="https://huaweiresearchcentergermanyaustria.teamtailor.com/departments/intelligent-cloud-technologies-laboratory">Huawei Intelligent Cloud Technologies Lab</a>, centered on advancing <a href= "http://opensu3d.github.io/">Open World 3D Scene Understanding</a>. Previously, I served as a Robotics Research Intern, concentrating on lifelong localization and mapping. During my studies, I also worked as a Student Research Assistant at the <a href="https://www.cee.ed.tum.de/cms/home/">Chair of Computational Modeling and Simulation</a>, contributing to various robotics projects.
+              </p>  
+                <p align="justify">
+                My primary interests spans robotics, 3D computer vision, machine learning, and physics simulation. With experience working on diverse R&D projects across these fields.
+                </p>
+              
+              
+              <!--p align="justify">
+              <a href="https://www.tum.de/en/">Technical University of Munich</a>
+                From Jul-2020 to Oct-2021, I worked at the <a href="https://nust.edu.pk/">National University of Science and Technology</a>, 
+                as part of the <a href="https://nust.edu.pk/">Integrated Navigation Terrestrial Electromagnetic Lab</a>. I primarily worked on the design and development of drones 
+                (fixed wing and vertical take of and landing aerial vehicles) for urban environments. 
+                Additionally, I also worked on the development of models for flight simulator and tuning flight control through software-in-loop simulation.
+              </p>
+              <p align="justify">
+                I also have a Bachelor's in Mechanical Engineering from <a href="https://www.neduet.edu.pk/">NED University of Engineering and Technology</a>, 
+                I work as a student research assistant at the Department of Mechanical Engineering under the supervision of 
+                <a href="https://scholar.google.com/citations?user=jOthSmQAAAAJ&hl=en">Dr.-Ing. Usman Allauddin</a>, where I numerically investigated different techniques 
+                for heat transfer enhancement through jet impingement. <a href="https://doi.org/10.1002/htj.21986">[1]</a>, 
+                <a href="https://www.dl.begellhouse.com/references/4c8f5faa331b09ea,212bf76947bffc03,5aa059fb1b898ef8.html">[2]</a>.
+              </p-->
+              <p style="text-align:center">
                 <a href="mailto:rafaymohiuddin7@gmail.com" target="_blank">Email</a> &nbsp;/&nbsp;
                 <a href="https://github.com/rafaymhddn">GitHub</a> &nbsp;/&nbsp;
-                <!--a href="https://orcid.org/0000-0003-3926-3679">Orcid</a> &nbsp;/&nbsp;-->
-                <a href="https://scholar.google.com/citations?user=dOFWyvoAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
+                <a href="https://orcid.org/0000-0003-3926-3679">Orcid</a> &nbsp;/&nbsp;
                 <a href="https://www.linkedin.com/in/rafaymhddn/"> LinkedIn</a> &nbsp;/&nbsp;
-                <a href="https://x.com/rafaymhddn/"> X</a> 
-                <!--a href="https://docs.google.com/presentation/d/195oGdjiIu9wtpmKJv1UpIYOMxiqWwR7RjWyqHicgO-w/edit?usp=sharing" target="_blank"> CV </a--> 
+                <a href="https://docs.google.com/presentation/d/195oGdjiIu9wtpmKJv1UpIYOMxiqWwR7RjWyqHicgO-w/edit?usp=sharing" target="_blank"> CV </a> 
               </p>
             </td>
             <td style="padding:2.5%;width:30%;max-width:30%">
@@ -174,40 +158,6 @@
         </table>
         <hr class="soft">
 
-<!-- News -->
-<button style="padding:0; border:0px transparent; background-color: transparent; outline:none;" type="button" class="collapsible" data-toggle="collapse" data-target="#content-news" id="news">
-    <h2>News</h2>
-  </button>
-  <div id="content-news" class="collapse in">
-    <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-right:auto; margin-left:auto;">
-      <tr>
-        <td style="padding:0; width:100%; vertical-align:middle">
-          <!-- Limit to 5 visible items, scroll rest -->
-          <div style="max-height: 8.5em; overflow-y: auto;">
-            <ul style="margin-top: 0; padding-left: 20px;">
-              <li align="justify"><span style="color:red">[05/2025]</span> OpenSU3D was presented at ICRA'25 on 22 May 2025 🎉🚀</li>
-              <li align="justify"><span style="color:blue">[03/2025]</span> Accepted into the ATLER Entrepreneurship in Residence program 🚀</li>
-              <li align="justify"><span style="color:red">[01/2025]</span> OpenSU3D paper accepted at ICRA'25 — check out the <a href="https://opensu3d.github.io/">Project Page</a> 🎓📢</li>
-              <li align="justify"><span style="color:purple">[01/2025]</span> Started building a startup idea around 3D generation 💡🔥</li>
-              <li align="justify"><span style="color:red">[09/2024]</span> Graduated with an M.Sc. from TUM 🧑‍🎓🎓</li>
-              <li align="justify"><span style="color:blue">[04/2024]</span> Defended Master's thesis on "Open World 3D Scene Understanding" at TUM 🛡️👏</li>
-              <li align="justify"><span style="color:blue">[10/2023]</span> Started thesis research in 3D scene understanding 🔍📊</li>
-              <li align="justify"><span style="color:blue">[04/2023]</span> Joined Huawei Munich Research Center as a Research Intern working on Life-Long SLAM 🤖🏢</li>
-              <li align="justify"><span style="color:red">[03/2023]</span> Paper on Additive Manufacturing accepted at ISARC'23 📄🎉</li>
-              <li align="justify"><span style="color:purple">[04/2022]</span> Started working as a HiWi at the Chair of Computational Modeling and Simulation 🛠️🧠</li>
-              <li align="justify"><span style="color:blue">[10/2021]</span> Started M.Sc. at TUM, moved to Munich, Germany 🎓🇩🇪</li>
-              <li align="justify"><span style="color:red">[10/2020]</span> Published BE research paper on Nanofluids in Wiley Journal of Heat Transfer 📢📄</li>
-              <li align="justify"><span style="color:purple">[07/2020]</span> Joined PNEC NUST to work on Aerial Robots 🤖✈️</li>
-              <li align="justify"><span style="color:red">[12/2019]</span> Completed B.E. from NEDUET, Pakistan 🎓🎉</li>
-
-            </ul>
-          </div>
-        </td>
-      </tr>
-    </table>
-  </div>
-  <hr class="soft">
-  
 
 <!-- Experience -->
 
@@ -226,7 +176,7 @@
         </div>
     </td>
     <td style="padding:2.5%;width:75%;vertical-align:top">
-        <papertitle><big><b>Huawei Munich Research Center</b></big></papertitle>
+        <papertitle><big><b>Huawei Munich</b></big></papertitle>
 
         <br>
         <papertitle style="color:gray"><big>Masters Thesis Research </big></papertitle><papertitle><big>- Intelligent Clound Technologies Lab</big></papertitle>
@@ -235,7 +185,7 @@
         <br>
         <p align="justify">
           <details>
-          <summary>Conducted R&D in the area of zero shot approches for "Open World 3D Scene Understanding" utilizing foundation and large language models; co-supervised by <a href="https://huaweiresearchcentergermanyaustria.teamtailor.com/departments/intelligent-cloud-technologies-laboratory">Huawei-ICTL</a> and <a href="https://www.cee.ed.tum.de/cms/home/">TUM-CMS</a>.</summary>            
+          <summary>Conducted R&D in the area of zero shot approches for “Open World 3D Scene Understanding” utilizing foundation and large language models; co-supervised by <a href="https://huaweiresearchcentergermanyaustria.teamtailor.com/departments/intelligent-cloud-technologies-laboratory">Huawei-ICTL</a> and <a href="https://www.cee.ed.tum.de/cms/home/">TUM-CMS</a>.</summary>            
           <ul>
               <li align="justify">Developed <a href="https://opensu3d.github.io/">OpenSU3D</a> an incremental and scalable approch for zero-shot 3D scene understanding utilizing foundation and large language models. </li>
               <li align="justify">Quantitatively and qualitatively demonstrated effectiveness of open vocabulary segmentation and context-based instance retrieval, exceeding state-of-the-art approaches. </li>
