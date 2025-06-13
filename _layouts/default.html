@@ -11,66 +11,64 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <!--link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"-->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-    <style>
+  <style>
+    /* Modern Navigation Bar Styles */
+    .nav-container {
+      width: 100%;
+      background-color: #ffffff;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
+    .nav-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem 0;
+      margin: 0;
+      list-style: none;
+    }
 
-        /* Modern Navigation Bar Styles */
-        .nav-container {
-            width: 100%;
-            background-color: #ffffff;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+    .nav-item {
+      margin: 0 0.5rem;
+    }
 
-        .nav-menu {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0.5rem 0;
-            margin: 0;
-            list-style: none;
-        }
+    .nav-link {
+      color: #333;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding: 0.3rem 0.6rem;
+      border-radius: 3px;
+      transition: all 0.2s ease;
+    }
 
-        .nav-item {
-            margin: 0 0.5rem;
-        }
+    .nav-link:hover {
+      background-color: #f5f5f5;
+      color: #1a73e8;
+    }
 
-        .nav-link {
-            color: #333;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            padding: 0.3rem 0.6rem;
-            border-radius: 3px;
-            transition: all 0.2s ease;
-        }
+    .nav-link.active {
+      color: #1a73e8;
+      background-color: #e8f0fe;
+    }
 
-        .nav-link:hover {
-            background-color: #f5f5f5;
-            color: #1a73e8;
-        }
-
-        .nav-link.active {
-            color: #1a73e8;
-            background-color: #e8f0fe;
-        }
-
-        @media (max-width: 768px) {
-            .nav-menu {
-                flex-wrap: wrap;
-                padding: 0.3rem 0;
-            }
-            .nav-item {
-                margin: 0.15rem;
-            }
-            .nav-link {
-                font-size: 0.8rem;
-                padding: 0.2rem 0.4rem;
-            }
-        }
-    </style>
+    @media (max-width: 768px) {
+      .nav-menu {
+        flex-wrap: wrap;
+        padding: 0.3rem 0;
+      }
+      .nav-item {
+        margin: 0.15rem;
+      }
+      .nav-link {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.4rem;
+      }
+    }
+  </style>
 
 
   <!-- Google tag (gtag.js) -->
@@ -166,6 +164,7 @@
         </table>
         <hr class="soft">
 
+
 <!-- News -->
 <button style="padding:0; border:0px transparent; background-color: transparent; outline:none;" type="button" class="collapsible" data-toggle="collapse" data-target="#content-news" id="news">
     <h2>News</h2>
@@ -185,12 +184,13 @@
               <li align="justify"><span style="color:blue">[04/2024]</span> Defended Master's thesis on "Open World 3D Scene Understanding" at TUM 🛡️👏</li>
               <li align="justify"><span style="color:blue">[10/2023]</span> Started thesis research in 3D scene understanding 🔍📊</li>
               <li align="justify"><span style="color:blue">[04/2023]</span> Joined Huawei Munich Research Center as a Research Intern working on Life-Long SLAM 🤖🏢</li>
+              <li align="justify"><span style="color:blue">[10/2021]</span> Started M.Sc. at TUM 🎓📘</li>
               <li align="justify"><span style="color:red">[03/2023]</span> Paper on Additive Manufacturing accepted at ISARC'23 📄🎉</li>
               <li align="justify"><span style="color:purple">[04/2022]</span> Started working as a HiWi at the Chair of Computational Modeling and Simulation 🛠️🧠</li>
-              <li align="justify"><span style="color:blue">[10/2021]</span> Started M.Sc. at TUM, moved to Munich, Germany 🎓🇩🇪</li>
-              <li align="justify"><span style="color:red">[10/2020]</span> Published BE research paper on Nanofluids in Wiley Journal of Heat Transfer 📢📄</li>
-              <li align="justify"><span style="color:purple">[07/2020]</span> Joined PNEC NUST to work on Aerial Robots 🤖✈️</li>
-              <li align="justify"><span style="color:red">[12/2019]</span> Completed B.E. from NEDUET, Pakistan 🎓🎉</li>
+            <li align="justify"><span style="color:blue">[10/2021]</span> Started M.Sc. at TUM, moved to Munich, Germany 🎓🇩🇪</li>
+            <li align="justify"><span style="color:red">[10/2020]</span> Published BE research paper on Nanofluids in Wiley Journal of Heat Transfer 📢📄</li>
+            <li align="justify"><span style="color:purple">[07/2020]</span> Joined PNEC NUST to work on Aerial Robots 🤖✈️</li>
+            <li align="justify"><span style="color:red">[12/2019]</span> Completed B.E. from NEDUET, Pakistan 🎓🎉</li>
 
             </ul>
           </div>
@@ -199,6 +199,38 @@
     </table>
   </div>
   <hr class="soft">
+  
+<!-- News -->
+<button class="collapsible" data-toggle="collapse" data-target="#content-news" id="news">
+  <h2>News</h2>
+</button>
+<div id="content-news" class="collapse in">
+  <table>
+    <tr>
+      <td class="news-content">
+        <div class="news-scroll">
+          <ul>
+            <li><span class="date-red">[05/2025]</span> OpenSU3D was presented at ICRA'25 on 22 May 2025 🎉🚀</li>
+            <li><span class="date-blue">[03/2025]</span> Accepted into the ATLER Entrepreneurship in Residence program 🚀</li>
+            <li><span class="date-red">[01/2025]</span> OpenSU3D paper accepted at ICRA'25 — check out the <a href="https://opensu3d.github.io/">Project Page</a> 🎓📢</li>
+            <li><span class="date-purple">[01/2025]</span> Started building a startup idea around 3D generation 💡🔥</li>
+            <li><span class="date-red">[09/2024]</span> Graduated with an M.Sc. from TUM 🧑‍🎓🎓</li>
+            <li><span class="date-blue">[04/2024]</span> Defended Master's thesis on "Open World 3D Scene Understanding" at TUM 🛡️👏</li>
+            <li><span class="date-blue">[10/2023]</span> Started thesis research in 3D scene understanding 🔍📊</li>
+            <li><span class="date-blue">[04/2023]</span> Joined Huawei Munich Research Center as a Research Intern working on Life-Long SLAM 🤖🏢</li>
+            <li><span class="date-red">[03/2023]</span> Paper on Additive Manufacturing accepted at ISARC'23 📄🎉</li>
+            <li><span class="date-purple">[04/2022]</span> Started working as a HiWi at the Chair of Computational Modeling and Simulation 🛠️🧠</li>
+            <li><span class="date-blue">[10/2021]</span> Started M.Sc. at TUM, moved to Munich, Germany 🎓🇩🇪</li>
+            <li><span class="date-red">[10/2020]</span> Published BE research paper on Nanofluids in Wiley Journal of Heat Transfer 📢📄</li>
+            <li><span class="date-purple">[07/2020]</span> Joined PNEC NUST to work on Aerial Robots 🤖✈️</li>
+            <li><span class="date-red">[12/2019]</span> Completed B.E. from NEDUET, Pakistan 🎓🎉</li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+<hr class="soft">
   
 
 <!-- Experience -->
