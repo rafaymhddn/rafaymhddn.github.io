@@ -1,1 +1,2 @@
-convert -background transparent "images/dp4.jpeg" -define icon:auto-resize=16,24,32,48,64,72,96,128,256 "favicon.ico"
+#!/bin/bash
+magick -size 32x32 xc:transparent -font "Arial" -pointsize 24 -gravity center -draw "text 0,0 '👋'" favicon.ico
