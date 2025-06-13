@@ -29,19 +29,19 @@ th,
 tr,
 p,
 a {
-  font-family: Helvetica;
+  font-family: 'Lato';
   font-size: 14px;
   font-display: auto;
 }
 
 strong {
-  font-family: Helvetica;
+  font-family: 'Lato';
   font-size: 14px;
   font-display: auto;
 }
 
 h2 {
-  font-family: Helvetica;
+  font-family: 'Lato';
   font-size: 22px;
   font-display: auto;
   font-weight: normal;
@@ -51,7 +51,7 @@ h2 {
 }
 
 h3 {
-  font-family: Helvetica;
+  font-family: 'Lato';
   font-size: 14px;
   font-weight: 700;
   font-display: auto;
@@ -61,7 +61,7 @@ h3 {
 }
 
 h1 {
-  font-family: Helvetica;
+  font-family: 'Lato';
   font-size: 32px;
   font-weight: normal;
   font-display: auto;
@@ -107,12 +107,14 @@ span.highlight {
   width: 100%;
   text-align: left;
   cursor: pointer;
+  font-family: 'Lato';
 }
 
 .news-content {
   padding: 2.5%;
   width: 100%;
   vertical-align: middle;
+  font-family: 'Lato';
 }
 
 .news-scroll {
@@ -123,11 +125,13 @@ span.highlight {
 .news-scroll ul {
   margin-top: 0;
   padding-left: 20px;
+  font-family: 'Lato';
 }
 
 .news-scroll li {
   text-align: justify;
   margin-bottom: 0.5em;
+  font-family: 'Lato';
 }
 
 /* Date Colors */
