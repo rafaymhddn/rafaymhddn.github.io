@@ -603,6 +603,77 @@
         </table>
 
         <!-- Contact Section -->
+<button 
+style="padding:2.5%; border:0px transparent; background-color: transparent; outline:none;" 
+type="button" 
+class="collapsible" 
+data-toggle="collapse" 
+data-target="#content-contact" 
+id="contact"
+onclick="Cal.ns.quickchat('showPopup')"
+>
+<h2>Contact</h2>
+</button>
+
+<div id="content-contact" class="collapse in">
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tr>
+    <td style="padding:2.5%;width:100%;vertical-align:left">
+      <p style="text-align:left; font-size: 0.9rem; line-height: 1.4;">
+        <b>Rafay Mohiuddin | M.Sc. TUM<br>
+        📍 Munich, Germany<br>
+        ✉️ <a href="mailto:rafay.mhddn@gmail.com">rafay.mhddn[at]gmail.com</a><br>
+        🔗 <a href="https://linkedin.com/in/rafaymhddn/">linkedin.com/in/rafaymhddn/</a><br>
+        🌐 <a href="https://rafaymhddn.github.io/">rafaymhddn.github.io/</a>
+      </p>
+
+      <!-- Cal embed script (manual popup trigger, no floating) -->
+      <script type="text/javascript">
+        (function (C, A, L) {
+          let p = function (a, ar) { a.q.push(ar); };
+          let d = C.document;
+          C.Cal = C.Cal || function () {
+            let cal = C.Cal;
+            let ar = arguments;
+            if (!cal.loaded) {
+              cal.ns = {};
+              cal.q = cal.q || [];
+              d.head.appendChild(d.createElement("script")).src = A;
+              cal.loaded = true;
+            }
+            if (ar[0] === L) {
+              const api = function () { p(api, arguments); };
+              const namespace = ar[1];
+              api.q = api.q || [];
+              if (typeof namespace === "string") {
+                cal.ns[namespace] = cal.ns[namespace] || api;
+                p(cal.ns[namespace], ar);
+                p(cal, ["initNamespace", namespace]);
+              } else {
+                p(cal, ar);
+              }
+              return;
+            }
+            p(cal, ar);
+          };
+        })(window, "https://app.cal.com/embed/embed.js", "init");
+
+        Cal("init", "quickchat", { origin: "https://cal.com" });
+
+        Cal.ns.quickchat("ui", {
+          theme: "dark",
+          hideEventTypeDetails: false,
+          layout: "month_view"
+        });
+      </script>
+      <!-- End Cal embed -->
+    </td>
+  </tr>
+</table>
+</div>
+
+
+        <!-- Contact Section -->
         <button style="padding:2.5%; border:0px transparent; background-color: transparent;outline:none;" type="button" class="collapsible" data-toggle="collapse" data-target="#content-contact" id="contact">
           <h2>Contact</h2>
         </button>
