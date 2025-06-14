@@ -11,6 +11,8 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  
+  <!-- Styling -->
   <style>
     /* Modern Navigation Bar Styles */
     .nav-container {
@@ -70,7 +72,6 @@
     }
   </style>
 
-
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3NEVL70KSZ"></script>
   <script>
@@ -78,17 +79,6 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-3NEVL70KSZ');
-  </script>
-
-  <script>
-    fetch('https://ipapi.co/country/')
-        .then(response => response.text())
-        .then(country => {
-            if (country === 'CN' || country === 'RU' || country === 'IR') { // Add or replace country codes as needed
-                window.location.href = 'https://www.google.com'; // URL to redirect blocked users, including 'https://'
-            }
-        })
-        .catch(error => console.error('Error determining country:', error));
   </script>
 
 </head>
@@ -104,6 +94,7 @@
 <!-- Section Tab -->
         <div class="nav-container">
             <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#news" class="nav-link" onclick="Expand('news')">News</a></li>
                 <li class="nav-item"><a href="#education" class="nav-link" onclick="Expand('education')">Education</a></li>
                 <li class="nav-item"><a href="#experience" class="nav-link" onclick="Expand('experience')">Experience</a></li>
@@ -114,11 +105,11 @@
         </div>
 
 <!-- Name -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:40px;"><tbody>
+        <table id="name" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:40px;"><tbody>
           <tr style="padding:0px">                                    
             <td style="padding:0%;width:63%;vertical-align:middle">
               <p style="text-align:center;margin:0;">
-                <h1 style="font-size: 40px;text-align:center;margin:0;"><name>Rafay Mohiuddin</name></h1>
+                <h1 style="font-size: 40px;text-align:center;margin:0;"><name>Rafay Mohiuddin (Bajwa)</name></h1>
               </p>
             </td>
           </tr>            
@@ -144,6 +135,13 @@
               <p align="justify">
                 My core interests lie at the intersection of robotics, 3D perception, machine learning, and physics simulation — with hands-on experience in developing and deploying research-driven solutions across these domains.
               </p>
+
+              <p>
+                I'm currently building a startup in 3D content generation and also consult AI-focused startups. 
+                You're welcome to <u class="dotted"><b><i><a href="https://cal.com/rafaymhddn/quickchat" target="_blank" rel="noopener noreferrer"
+                  style="color:#800020">set up a call</a></i></b></u> if you'd like to chat about research startups, robotics, 3D vision, LLMs, or potential collaborations.
+              </p>
+              
               
 
               <p style="text-align:center; font-size: 1.07rem; font-weight: 500;">
