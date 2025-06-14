@@ -627,24 +627,23 @@
                 <td>
                   <heading><b>Schedule a Meeting</b></heading>
                   <div style="text-align:center; margin: 20px 0;">
-                    <div id="cal-button-container" style="display: inline-block;"></div>
+                    <a href="#" 
+                       data-cal-link="rafaymhddn/quickchat"
+                       data-cal-namespace="quickchat"
+                       data-cal-config='{"layout":"month_view","theme":"dark"}'
+                       style="display: inline-block; padding: 12px 24px; background-color: #000000; color: white; text-decoration: none; border-radius: 6px; font-weight: 500;">
+                      Book my Cal
+                    </a>
                   </div>
                   
-                  <!-- Cal floating-popup embed code begins -->
+                  <!-- Cal element-click embed code begins -->
                   <script type="text/javascript">
                     (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
                     Cal("init", "quickchat", {origin:"https://cal.com"});
 
-                    Cal.ns.quickchat("floatingButton", {
-                      "calLink":"rafaymhddn/quickchat",
-                      "config":{"layout":"month_view","theme":"dark"},
-                      "buttonPosition":"bottom-left",
-                      "hideButtonIcon":false,
-                      "containerEl": "#cal-button-container"
-                    }); 
                     Cal.ns.quickchat("ui", {"theme":"dark","hideEventTypeDetails":false,"layout":"month_view"});
                   </script>
-                  <!-- Cal floating-popup embed code ends -->
+                  <!-- Cal element-click embed code ends -->
                 </td>
               </tr>
             </tbody>
