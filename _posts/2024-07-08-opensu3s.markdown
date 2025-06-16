@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "OpenSU3D: Open Word 3D Scene Understanding using Foundation Models"
-date:   2024-07-8 22:20:59 +00:00
+date:   2025-07-8 22:20:59 +00:00
 image: /images/gif_opensu3d.gif
 categories: research
 authors: "<strong>Rafay Mohiuddin</strong>,Sai Manoj Prakhya, Fiona Collins, Ziyuan Liu, Andre Borrmann"
-subtitle: "IEEE Internatioanl Conference on Robotics and Automation (ICRA'25)"
+subtitle: "IEEE Internatioanl Conference on Robotics and Automation (ICRA)"
 venue: 
 paper: https://arxiv.org/pdf/2407.14279
 web: https://opensu3d.github.io/
