@@ -1,28 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!--head>
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3NEVL70KSZ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-3NEVL70KSZ');
-  </script>
-  
-  <title>{{ site.name }}</title>
-
-  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-
-  <meta name="author" content="{{ site.name }}" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-</head-->
 
 <head>
   <title>{{ site.name }}</title>
@@ -32,7 +10,68 @@
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   
+  <!-- Styling -->
+  <style>
+    /* Modern Navigation Bar Styles */
+    .nav-container {
+      width: 100%;
+      background-color: #ffffff;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .nav-item {
+      margin: 0 0.5rem;
+    }
+
+    .nav-link {
+      color: #333;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding: 0.3rem 0.6rem;
+      border-radius: 3px;
+      transition: all 0.2s ease;
+    }
+
+    .nav-link:hover {
+      background-color: #f5f5f5;
+      color: #1a73e8;
+    }
+
+    .nav-link.active {
+      color: #1a73e8;
+      background-color: #e8f0fe;
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu {
+        flex-wrap: wrap;
+        padding: 0.3rem 0;
+      }
+      .nav-item {
+        margin: 0.15rem;
+      }
+      .nav-link {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.4rem;
+      }
+    }
+  </style>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3NEVL70KSZ"></script>
   <script>
@@ -42,257 +81,251 @@
     gtag('config', 'G-3NEVL70KSZ');
   </script>
 
-  <script>
-    fetch('https://ipapi.co/country/')
-      .then(response => response.text())
-      .then(country => {
-        if (country === 'CN' || country === 'RU' | country === 'IR') { // Replace 'CN' and 'RU' with the ISO codes of countries you wish to block
-          window.location.href = 'www.google.com'; // URL to redirect blocked users
-        }
-      })
-      .catch(error => console.error('Error determining country:', error));
-  </script>
 </head>
+
+
 
 
 <body>
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tr style="padding:0px">
+    <tr style="padding:px">
       <td style="padding:0px">
 
 <!-- Section Tab -->
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">                                    
-            <td style="padding:0.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <a href="#news" onclick=Expand("news")>News</a>
-                &nbsp;/&nbsp;
-                <a href="#education" onclick=Expand("education")>Education</a>
-                &nbsp;/&nbsp;
-                <a href="#experience" onclick=Expand("experience")>Experience</a>
-                &nbsp;/&nbsp;
-                <a href="#publications" onclick=Expand("publications")>Publications</a>
-                &nbsp;/&nbsp;
-                <a href="#projects" onclick=Expand("projects")>Projects</a>
-                &nbsp;/&nbsp;
-                <a href="mailto:rafaymohiuddin7@gmail.com">Contact</a>
-                &nbsp;/&nbsp;
-                <a href="mailto:rafaymohiuddin7@gmail.com">{UNDER DEVELOPMENT}</a>
-              </p>
-            </td>
-          </tr>            
-        </table>
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#news" class="nav-link" onclick="Expand('news')">News</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link" onclick="Expand('education')">Education</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link" onclick="Expand('experience')">Experience</a></li>
+                <li class="nav-item"><a href="#publications" class="nav-link" onclick="Expand('publications')">Publications</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link" onclick="Expand('projects')">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
 
 <!-- Name -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table id="name" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:40px;"><tbody>
           <tr style="padding:0px">                                    
-            <td style="padding:1%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <h1  style="font-size: 40px;text-align:center"><name>Rafay Mohiuddin</name></h1>
+            <td style="padding:0%;width:63%;vertical-align:middle">
+              <p style="text-align:center;margin:0;">
+                <h1 style="font-size: 40px;text-align:center;margin:0;"><name>Rafay Mohiuddin</name></h1>
               </p>
             </td>
           </tr>            
         </table>
 
 <!-- Introduction -->
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:-10px;">
           <tr style="padding:0px">
             <td style="padding:2.5%;width:60%;vertical-align:middle">
             
               <br>
-              <p align="justify">Hi!, you can call me Rafay. I work with mathematical models, convert them to code to solve problems in engineering.
-              </p>
-          
-              <p align="justify">I am also a Master's student majoring in Computational Mechanics, at the <a href="https://www.ed.tum.de/en/ed/home-1/">TUM School of Engineering and Design</a>, 
-                part of the <a href="https://www.tum.de/en/">Technical University of Munich</a>. Currently I am working  on my masters thesis in the area on 'Open World Spatial Reasoning' at <a href="https://huawei.eu/">Huawei-Intelligent Cloud Technologies Lab</a>, 
-                before this I was working as a Research Intern mainly focusing on lidar based life long localization and mapping. Prior to that, during my masters I worked as a student research assistant at the 
-                <a href="https://www.cee.ed.tum.de/cms/home/">Chair of Computational Modeling and Simulation</a>, where I work on methods for 3D scanning 
-                and mapping along with their implementation using different robotics systems.
-              </p>
+              
               <p align="justify">
-                From Jul-2020 to Oct-2021, I worked at the <a href="https://nust.edu.pk/">National University of Science and Technology</a>, 
-                as part of the <a href="https://nust.edu.pk/">Integrated Navigation Terrestrial Electromagnetic Lab</a>. I primarily worked on the design and development of drones 
-                (fixed wing and vertical take of and landing aerial vehicles) for urban environments. 
-                Additionally, I also worked on the development of models for flight simulator and tuning flight control through software-in-loop simulation.
+                Hello, I'm Rafay 👋 — a Master's graduate from the <a href="https://www.ed.tum.de/en/ed/home-1/">TUM School of Engineering and Design</a>, 
+                with a focus on scientific computing, robotics, and 3D computer vision. 
+                My thesis research explored efficient and scalable methods for <a href="http://opensu3d.github.io/">open-world 3D scene understanding (ICRA'25)</a> using 2D foundation models and LLM.
               </p>
+              
               <p align="justify">
-                I also have a Bachelor's in Mechanical Engineering from <a href="https://www.neduet.edu.pk/">NED University of Engineering and Technology</a>, 
-                I work as a student research assistant at the Department of Mechanical Engineering under the supervision of 
-                <a href="https://scholar.google.com/citations?user=jOthSmQAAAAJ&hl=en">Dr.-Ing. Usman Allauddin</a>, where I numerically investigated different techniques 
-                for heat transfer enhancement through jet impingement. <a href="https://doi.org/10.1002/htj.21986">[1]</a>, 
-                <a href="https://www.dl.begellhouse.com/references/4c8f5faa331b09ea,212bf76947bffc03,5aa059fb1b898ef8.html">[2]</a>.
+                I previously worked as a Robotics Research Intern at the <a href="https://huaweiresearchcentergermanyaustria.teamtailor.com/departments/intelligent-cloud-technologies-laboratory">Huawei Munich Research Center</a>, focusing on lifelong localization and mapping, and as a Student Research Assistant at the <a href="https://www.cee.ed.tum.de/cms/home/">Chair of Computational Modeling and Simulation</a>, where I contributed to robotics and simulation-based projects.
               </p>
-              <p style="text-align:center">
-                <a href="mailto:rafaymohiuddin7@gmail.com" target="_blank">Email</a> &nbsp;/&nbsp;
-                <a href="https://github.com/rafaymhddn">GitHub</a> &nbsp;/&nbsp;
-                <a href="https://orcid.org/0000-0003-3926-3679">Orcid</a> &nbsp;/&nbsp;
-                <a href="https://www.linkedin.com/in/rafaymhddn/"> LinkedIn</a> &nbsp;/&nbsp;
-                <a href="https://drive.google.com/file/d/1z4RDWKfP1iaansLZzt5o1V9-DPxHuzQ1/view?usp=sharing" target="_blank"> CV</a> 
+              
+              <p align="justify">
+                My research interests spans <b>robotics</b>, <b>3D vision</b>, <b>machine learning</b>, and <b>physics simulation</b> — with hands-on experience in developing and deploying research-driven solutions across these domains.
               </p>
+
+              <p align="justify">
+                I'm currently working on a <a href="https://remesh.space/">3D generation</a> related startup, and also consult and collobrate with AI-focused startups.
+                <u class="dotted"><b><i><a href="https://cal.com/rafaymhddn/quickchat" target="_blank" rel="noopener noreferrer" style="color: purple">Feel free to set up a call</a></i></b></u> — I'm happy to discuss research, startups, robotics, 3D vision, LLMs, or potential collaborations.
+              </p>
+              
+              <!--p>
+                <span style="color:red;"><b>Open to PhD/R&D Roles - feel free to connect if my work interests you!</b></span>
+              </p-->
+              
+              
+
+              <p style="text-align:center; font-size: 18px; font-weight: 500;">
+                <a href="mailto:rafaymohiuddin7@gmail.com" target="_blank"><b>Email</b></a> &nbsp;/&nbsp;
+                <a href="https://github.com/rafaymhddn"><b>GitHub</b></a> &nbsp;/&nbsp;
+                <!--a href="https://orcid.org/0000-0003-3926-3679">Orcid</a> &nbsp;/&nbsp;-->
+                <a href="https://scholar.google.com/citations?user=dOFWyvoAAAAJ&hl=en"><b>Scholar</b></a> &nbsp;/&nbsp;
+                <a href="https://www.linkedin.com/in/rafaymhddn/"><b>LinkedIn</b></a> &nbsp;/&nbsp;
+                <a href="https://x.com/rafaymhddn/"><b>X</b></a> 
+              </p>
+              
             </td>
-            <td style="padding:2.5%;width:30%;max-width:30%">
-              <a href="images/dp4.jpeg"><img src="images/dp4.jpeg" style="width:120%;max-width:120%; border-radius: 5%" alt="profile photo"  class="hoverZoomLink"/></a>              
-            </td>
+            <td style="padding:2.5%;width:30%;max-width:30%; vertical-align: top;">
+                <div style="margin-top:50px;">  <!-- fine-tune this value -->
+                  <a href="images/dp24of.jpeg">
+                    <img src="images/dp24of.jpeg" style="width:100%;max-width:100%; border-radius: 5%" alt="profile photo" class="hoverZoomLink"/>
+                  </a>              
+                </div>
+              </td>
+              
           </tr>
+        
         </table>
         <hr class="soft">
 
-<!-- Education -->
 
-<button style="padding:2.5%; border:0px transparent; background-color: transparent;outline:none;"type="button" class="collapsible" data-toggle="collapse" data-target="#content-education" id="education">
-  <h2>Education</h2>
-</button>
-<div id="content-education" class="collapse in">
+<!-- Banner -->
 
-<table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
-
-    <tr>
-        <td style="padding:10px;width:25%;vertical-align:top">
-            <div class="one">
-                <img src='images/tum-logo.png' width="140" class="side-image;center">
-            </div>
-        </td>
-        <td style="padding:10px;width:75%;vertical-align:top">
-            <papertitle><big><b>Technical University of Munich</b></big></papertitle>
-            <br>
-            <papertitle style="color:gray"><big>Masters of Science </big></papertitle><papertitle><big>Computational Mechanics</big></papertitle>
-            <br>
-            Oct 2021 - Mar 2024
-            <br>
-            <p align="justify">
-              <b>Thesis:</b> Zero-Shot Open  Vocabulary Reasoning in Open World Scenarios* (<a href="https://huawei.eu/">Huawei</a>, <a href="https://www.cee.ed.tum.de/cms/home/">TUM</a>) <br>
-                <!--ul>
-                    <li align="justify"><b>Computation:</b> Advacnced Deep Learning in Physics, Computation in Engineering I (C++), Computation on Engineering II (C++), Cyber-Physical Systems Lab, Elements of Machine Learning, Functional Analysis and Computational Linear Algebra, Numerical Optimization - Robot Design and Control, Professional Software Development, Scientific Visualization, Software Lab  </li> 
-                    <br>                               
-                </ul-->
-                <br>
-                <b>Course Work:</b>
-                <ul>
-                    <li align="justify"><b>Computation:</b> Advacnced Deep Learning in Physics, Computation in Engineering I (C++), Computation on Engineering II (C++), Cyber-Physical Systems Lab, Elements of Machine Learning, Functional Analysis and Computational Linear Algebra, Numerical Optimization - Robot Design and Control, Professional Software Development, Scientific Visualization, Software Lab  </li> 
-                    <br>
-                    <li align="justify"><b>Mechanics:</b> Advanced Fluid Mechanics*, AI in Computational Mechanics, Computational Material Modeling I, Computational Material Modeling II, Computational Fluid Dynamics, Continuum Mechanics, Finite Element Methods I  </li>
-                    <br>
-                    <!--li align="justify"><b>Computation:</b> Computation in Engineering I & II (C++), Professional Software Development, Cyber-Physical Systems Lab, Software Lab, Elements of Machine Learning, Functional Analysis and Computational Linear Algebra, Scientific Visualization,  Numerical Optimization (Robot Design and Control), Advanced Deep Learning in Physics.  </li> 
-                    <br>
-                    <li align="justify"><b>Mechanics:</b> Computational Material Modeling I & II, Computational Fluid Dynamics, AI in Computational Mechanics, Finite Element Method I, Continuum Mechanics, Computational Material Modeling II, Advanced Fluid Dynamics *   </li>
-                    <br-->
-                    (* in progress)
-                    
-                </ul>
-            </p>
-        </td>
-    </tr>
-
-    <tr>
-      <td style="padding:10px;width:25%;vertical-align:top">
-          <div class="one">
-              <img src='images/ned-logo.png' width="140" class="side-image">
-          </div>
-      </td>
-      <td style="padding:10px;width:75%;vertical-align:top">
-          <papertitle><big><b>NED University of Engineering and Technology</b></big></papertitle>
-          <br>
-          <papertitle style="color:gray"><big>Bachelors of Science </big></papertitle><papertitle><big>Mechanical Engineering</big></papertitle>
-          <br>
-          Dec 2015 - Sep 2019
-          <br>
-          <p align="justify">
-              Numerical Investigation of Heat Transfer Enhancement Methods in Impinging Jets. 
-              <!--br-->
-              <a href="https://doi.org/10.1002/htj.21986">[1]</a>, 
-              <a href="https://www.dl.begellhouse.com/references/4c8f5faa331b09ea,212bf76947bffc03,5aa059fb1b898ef8.html">[2]</a>             
-          </p>
-      </td>
-  </tr>
-
-</tbody></table>
+<div id="content-news" class="collapse in">
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img src="images/banner_gif.gif" alt="Fun Banner Gif", style="padding:1.5%;width:95%;max-width:95%";>
+</div>
 </div>
 <hr class="soft">
+         
 
+
+<!-- News -->
+<button style="padding:2.5%; border:0px transparent; background-color: transparent;outline:none;" type="button" class="collapsible" data-toggle="collapse" data-target="#content-news" id="news">
+  <h2>News</h2>
+</button>
+<div id="content-news" class="collapse in">
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tr>
+      <td style="padding:0%;width:100%;vertical-align:middle">
+        <!-- Limit to 5 visible items, scroll rest -->
+        <div style="max-height: 8.4em; overflow-y: auto;">
+          <ul style="margin-top: 0; padding-left: 60px;">
+            <li align="justify"><span style="color:red">[05/2025]</span> <a href="https://opensu3d.github.io/">OpenSU3D</a> was presented at ICRA'25 on 22 May 2025 🎉🚀</li>
+            <li align="justify"><span style="color:blue">[03/2025]</span> Accepted into the ATLER Entrepreneurship in Residence program 🚀</li>
+            <li align="justify"><span style="color:red">[01/2025]</span> <b>OpenSU3D</b> paper accepted at ICRA'25 — check out the <a href="https://opensu3d.github.io/">Project Page</a> 🎓📢</li>
+            <li align="justify"><span style="color:purple">[01/2025]</span> Started building a startup idea around 3D generation 💡🔥</li>
+            <li align="justify"><span style="color:red">[09/2024]</span> Completed, M.Sc., graduated from TUM 🧑‍🎓🎓</li>
+            <li align="justify"><span style="color:blue">[04/2024]</span> Defended Master's thesis on "Open World 3D Scene Understanding" at TUM 🛡️👏</li>
+            <li align="justify"><span style="color:blue">[10/2023]</span> Started thesis research in 3D scene understanding 🔍📊</li>
+            <li align="justify"><span style="color:blue">[04/2023]</span> Joined Huawei Munich Research Center as a Research Intern working on Life-Long SLAM 🤖🏢</li>
+            <li align="justify"><span style="color:blue">[10/2021]</span> Started M.Sc. at TUM 🎓📘</li>
+            <li align="justify"><span style="color:red">[03/2023]</span> Paper on Additive Manufacturing accepted at ISARC'23 📄🎉</li>
+            <li align="justify"><span style="color:purple">[04/2022]</span> Started working as a HiWi at the Chair of Computational Modeling and Simulation 🛠️🧠</li>
+            <li align="justify"><span style="color:blue">[10/2021]</span> Started M.Sc. at TUM, moved to Munich, Germany 🎓🇩🇪</li>
+            <li align="justify"><span style="color:red">[10/2020]</span> Published BE research paper on Nanofluids in Wiley Journal of Heat Transfer 📢📄</li>
+            <li align="justify"><span style="color:purple">[07/2020]</span> Joined PNEC NUST to work on Aerial Robots 🤖✈️</li>
+            <li align="justify"><span style="color:red">[12/2019]</span> Completed B.E. from NEDUET, Pakistan 🎓🎉</li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+<hr class="soft">
+  
 <!-- Experience -->
 
 <button style="padding:2.5%; border:0px transparent; background-color: transparent;outline:none;"type="button" class="collapsible" data-toggle="collapse" data-target="#content-experience" id="experience">
   <h2>Experience</h2>
 </button>
-<div id="content-experience" class="collapse in">
+<div id="content-experience">
 
-<table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"><tbody>
-
-
-  <tr>
-    <td style="padding:10px;width:25%;vertical-align:top">
+<!--table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto"-->
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <tr style="padding-top: 0; padding-bottom: 0;">
+    <td style="padding:2.5%;width:25%;vertical-align:top;text-align:center;min-width:120px">
         <div class="one">
-            <img src='images/huawei-logo.png' width="140" class="side-image">
+            <img src='images/antler_logo.png' style="width:70%;" alt="project image">
         </div>
     </td>
-    <td style="padding:10px;width:75%;vertical-align:top">
-        <papertitle><big><b>Huawei Munich</b></big></papertitle>
-
-        <!--br>
-        <papertitle style="color:gray"><big>Masters Thesis Student </big></papertitle><papertitle><big>- Intelligent Clound Technologies Lab</big></papertitle>
-        <br>
-        Oct 2023 - Present
-        <br>
-        <p align="justify">
-          Working as a research intern at the <a href="https://huawei.eu/">Huawei-Intelligent Cloud Technologies Lab</a> on the area of life-long mapping and localization.            
-            <ul>
-                <li align="justify">ncorporated multiple functionalities (pose graph optimization, hierarchical bun-
-                  dle adjustment ...) to improved performance of lidar based life long localization
-                  and mapping module.</li>
-                <li align="justify">Extensively reviewed literature to study recent trends and potential research
-                  directions in the area of 3D perception.</li>
-                <li align="justify">Develop basic prototype for open vocabulary 3D object detection.</li>
-            </ul>
-        </p-->
+    <td style="padding:2.5%;width:75%;vertical-align:top">
+        <papertitle><big><b>ANTLER</b></big></papertitle>
 
         <br>
-        <papertitle style="color:gray"><big>Research Intern  </big></papertitle><papertitle><big>- Intelligent Clound Technologies Lab</big></papertitle>
+        <papertitle style="color:gray"><big>Entrepreneur in Residence </big></papertitle><papertitle><big>- Spring 2025 Cohort</big></papertitle>
         <br>
-        May 2023 - Mar 2024
+        Mar 2025 - Jun 2025
         <br>
-        <p align="justify">
-          Contributed as robotics research intern at the on the area of 3D perception at <a href="https://huawei.eu/">Huawei-Intelligent Cloud Technologies Lab</a>.         
-            <!--ul>
-                <li align="justify">Incorporated multiple functionalities (pose graph optimization, hierarchical bundle adjustment ...) to improved performance of lidar based life long localization
-                  and mapping module.</li>
-                <li align="justify">Extensively reviewed literature to study recent trends and potential research
-                  directions in the area of 3D perception.</li>
-                <li align="justify">Develop basic prototype for open vocabulary 3D object detection.</li>
-            </ul-->
-        </p>
     </td>
   </tr>
 
-    <tr>
-        <td style="padding:10px;width:25%;vertical-align:top">
+  <tr style="padding-top: 0; padding-bottom: 0;">
+    <td style="padding:2.5%;width:25%;vertical-align:top;text-align:center;min-width:120px">
+        <div class="one">
+            <img src='images/huawei-logo.jpeg' style="width:70%; height:auto;" alt="project image">
+        </div>
+    </td>
+    <td style="padding:2.5%;width:75%;vertical-align:top">
+        <papertitle><big><b>Huawei Munich</b></big></papertitle>
+
+        <br>
+        <papertitle style="color:gray"><big>Masters Thesis Research </big></papertitle><papertitle><big>- Intelligent Clound Technologies Lab</big></papertitle>
+        <br>
+        Oct 2023 - Apr 2024
+        <br>
+        <p align="justify">
+          <details>
+          <summary>Conducted R&D in the area of zero shot approches for “Open World 3D Scene Understanding” utilizing foundation and large language models; co-supervised by <a href="https://huaweiresearchcentergermanyaustria.teamtailor.com/departments/intelligent-cloud-technologies-laboratory">Huawei-ICTL</a> and <a href="https://www.cee.ed.tum.de/cms/home/">TUM-CMS</a>.</summary>            
+          <ul>
+              <li align="justify">Developed <a href="https://opensu3d.github.io/">OpenSU3D</a> an incremental and scalable approch for zero-shot 3D scene understanding utilizing foundation and large language models. </li>
+              <li align="justify">Quantitatively and qualitatively demonstrated effectiveness of open vocabulary segmentation and context-based instance retrieval, exceeding state-of-the-art approaches. </li>
+              <li align="justify">Explored downstream applications such as 3D instance segmentation, automatic labeling, and spatial reasoning (chat with scene using LLM). </li>
+              <li align="justify">Currently, working on research paper to publish findings. </li>
+              <!--li align="justify">Developed feature fusion scheme based on CLIP embeddings for context-based localization of instances in 3D space with open-vocabulary queries. Quantitative and qualitative performance exceeds current state of the art.</li> 
+              <li align="justify">Additionally, conducted explorative study and demonstrated global automatic labeling and spatial reasoning over 3D scene, using large language modes.</li>
+              <li align="justify">Currently, working on research paper based on findings.</li--> 
+            </ul>
+          </details>
+        </p>
+     
+        <br>
+        <papertitle style="color:gray"><big>Research Intern  </big></papertitle><papertitle><big>- Intelligent Clound Technologies Lab</big></papertitle>
+        <br>
+        Apr 2023 - Oct 2024
+        <br>
+        <p align="justify">
+          <details>
+            <summary>Contributed as a Robotics Research Intern at <a href="https://huaweiresearchcentergermanyaustria.teamtailor.com/departments/intelligent-cloud-technologies-laboratory">Huawei's Intelligent Cloud Technologies Lab</a> in the area of 3D robotics perception, primarily focusing on LiDAR-based Life Long Localization and Mapping.</summary>      
+            <ul>
+                <li align="justify">Research cutting-edge techniques to improve LiDAR-based lifelong localization and mapping systems. Implemented hierarchical bundle adjustment, pose graph optimization, etc. to enhance localization and mapping performance.</li>
+                <li align="justify">Refactor and modularize the SLAM pipeline to facilitate scalability, maintainability, and ease of integration with future enhancements.</li>
+                <li align="justify"> Studied and implemented recent methods, and explored potential research directions in the areas of 3D Robotics Perception, Neural Radiance Field, and Scene Understanding.</li>
+            </ul>
+          </details>
+        </p>
+        <div style="text-align: center;">
+          <img src="images/thesis_3.gif" alt="thesis_3" style="width:75%; height:150px; border-radius: 5%; border: 2px solid #555"> 
+        </div>
+        
+    </td>
+  </tr>
+
+    <tr >
+      <td style="padding:2.5%;width:25%;vertical-align:top;text-align:center;min-width:120px">
             <div class="one">
-                <img src='images/tum-logo.png' width="140" class="side-image">
+                <img src='images/tum-logo.png' style="width:70%; height:auto;" alt="project image">
             </div>
         </td>
-        <td style="padding:10px;width:75%;vertical-align:top">
+        <td style="padding:2.5%;width:75%;vertical-align:top">
            
             <papertitle><big><b>Technical University of Munich</b></big></papertitle>
             <br>
             <papertitle style="color:gray"><big>Research Assistant </big></papertitle><papertitle><big>- Chair of Computational Modeling and Simulation</big></papertitle>
             <br>
-            Jul 2022 - Apr 2023
+            Apr 2022 - Apr 2023
             <br>
             <p align="justify">
-              Contributed as a student research assistant (HiWi) towards the <a href="https://intrepid-project.eu/">Intriped-Project</a>  at the <a href="https://www.cee.ed.tum.de/cms/home/">Chair of Computational Modeling and Simulation</a>.
+              <details>
+                <summary>Contributed to the <a href="https://intrepid-project.eu/">Intriped Project</a> as a student research assistant and the 
+              <a href="https://amc-trr277.de/">Additive Manufacturing Project</a> as part of software practicum at the <a href="https://www.cee.ed.tum.de/cms/home/">Chair of Computational Modeling and Simulation</a>.</summary>      
                 <ul>
-                    <li align="justify">Assisted deployment of mapping system on GO1 quadruped-robot. Streamline the process for calibrating, synchronizing, communicating, and  data recording from the sensors.</li>
-                    <li align="justify">Implemented various ROS libraries for lidar-based localization and map-
-                      ping. Dockerized and configured the libraries for seamless use within the
-                      mapping system for indoor and outdoor environment.</li>
-                    <li align="justify">Improved localization module by adding functionality of initial alignment
-                      with existing map. Benchmarked localization and mapping performance
-                      of different slam packages.</li>
-                    <li align="justify">Enhanced 2D BIM-to-SLAM simulation code to incorporate support for3D environments with
-                      Gazebo. Also creating a light-weight Blender based
-                      lidar simulation module.</li>
+                  <li align="justify">Proposed methodology for robust, real-time control of material 
+                    flow in additive manufacturing for construction using an RGB camera.
+                    Successfully deployed this solution on a scaled-down setup based on UR10 robot.</li>
+                  <li align="justify">Developed a lightweight Blender-based LiDAR simulation tool tailored for large
+                    3D building models. The tool automatically plans paths based on the 3D model
+                    and exports LiDAR scans according to configured specifications. Additionally, enhanced the existing 2D BIM-to-SLAM simulation module for 3D environ-
+                    ments by incorporating support for Gazebo.</li>
+                  <li align="justify">Collaborated in the development of mapping system based on GO1 quadruped
+                    robot. Streamlined process for sensor calibration, synchronization, communication, and data recording. Dockerized and configured open-sourced ROS-based
+                    SLAM libraries for seamless use in indoor and outdoor environments.</li>
+
                 </ul>
+              </details>
+            </p>
                 <div style="text-align: center;">
                   <img src="images/robot_walk_6.gif" alt="go1" style="width:75%; height:150px; border-radius: 5%; border: 2px solid #555"> 
                 </div>
@@ -312,17 +345,17 @@
                     <!--img src="images/wavefront_1.gif" alt="wavefront" style="width:30%; height:auto; border-radius: 5%; border: 2px solid #555"-->
                   </div>                  
                 </div>
-            </p>
+            
         </td>
     </tr>
 
     <tr>
-      <td style="padding:10px;width:25%;vertical-align:top">
+      <td style="padding:2.5%;width:25%;vertical-align:top;text-align:center;min-width:120px">
           <div class="one">
-              <img src='images/nust-logo.png' width="140" class="side-image">
+              <img src='images/nust-logo.png' style="width:70%; height:auto;" alt="project image">
           </div>
       </td>
-      <td style="padding:10px;width:75%;vertical-align:top">
+      <td style="padding:2.5%;width:75%;vertical-align:top">
          
           <papertitle><big><b>National University of Science and Technology</b></big></papertitle>
           <br>
@@ -331,41 +364,17 @@
           Jul 2020 - Oct 2021
           <br>
           <p align="justify">
-            Contributed to a diverse set of projects as Research Engineer at <a href="https://nust.edu.pk/">Integrated Navigation Terrestrial Electromagnetic Lab</a> at 
-            National University of Science and University.
+            <details>
+              <summary>Contributed to a diverse set of projects focused on the development of aerial robots at the <a href="https://nust.edu.pk/">Integrated Navigation Terrestrial Electromagnetic Lab</a> at 
+            National University of Science and University.</summary>      
             <ul>
-              <li align="justify">Created conceptual and preliminary design (aeronautics calculations) for
-                fixed-wing UAVs and VTOL.</li>
-              <li align="justify">Co-Led detail design activity to create CAD models in SolidWorks and
-                exporting of manufacturing plans. Optimized aerodynamics and structural
-                components by conducting CFD, FEA, FSI simulations using ANSYS.</li>
-              <li align="justify">Design propulsion system and testbench for DLE-120 and engine.</li>
-              <li align="justify">Created model for VTOL (vertical take off and landing) and fixed-wing
-                aerial vehicle for x-plane flight simulator.</li>
-              <li align="justify">Created setup for SITL (software in the loop) simulation by integrating x-plane
-                flight simulator environment with mission planner (PX4) firmware, for
-                tuning controller of fixed wing UAVs.</li>
-              </ul>
-          </p>
-          <!--p>Control Group:
-              <ul> 
-                  <li align="justify">Created model for VTOL, fixed-wing UAVs in x-plane flight simulator.</li>
-                  <li align="justify">Conducted SITL (software in the loop) simulation by integrating x-plane flight simulator environment with mission 
-                    planner (PX4) firmware, for tuning controller of fixed wing UAVs.</li>
-              </ul>
-          </p>
-          <p>Design Group:
-            <ul> 
-                <li align="justify">Created conceptual and preliminary design (aeronautics calculations) for fixed-wing UAVs and VTOL. </li>
-                <li align="justify">Led detail design activity to create CAD assembly in SolidWorks and exporting of manufacturing plans. Optimized aerodynamics and structural components by conducting CFD, FEA, FSI simulations using ANSYS.</li>
-                <li align="justify">Design test bench and propulsion system for DLE-120 engine.</li>
+              <li align="justify">Developed setup for Software in the Loop (SITL) simulation for tuning the flight controller. Integrated the X-Plane flight simulator with the flight controller firmware. Based on aeronautical design, developed models of vertical take-off and fixed-wing aerial vehicles for the simulator.</li>
+              <li align="justify">Carried out end-to-end development of vertical take-off and fixed-wing aerial vehicles, from preliminary design (aeronautics calculations), detailed design (detailed CAD assemblies) to the export of manufacturing plans. Optimized design, aerodynamics, and structural components by conducting CFD, FEA, FSI simulations.</li>
+              <li align="justify">Provided guidance and mentorship to undergraduate interns to support project development.</li>    
             </ul>
-        </p>
-        <p>Material Testing Group:
-          <ul> 
-              <li align="justify">Conducted numeric simulation (ANSYS ACP), destructive and non-destructive (ultrasonic) testing of different composite samples with different composite layup schemes. </li>
-              <li align="justify">Collaborated in preparation of coursework and conducted lab sessions on calibrating and sizing defects through PAUT (phased array ultrasonic testing) using Omni scan MX8. </li>
-          </ul-->
+            </details>
+            </p>
+          
           <div class="row">
             <div class="column">
               <div style="text-align: center;">
@@ -377,12 +386,12 @@
   </tr>
 
     <tr>
-      <td style="padding:10px;width:25%;vertical-align:top">
+      <td style="padding:2.5%;width:25%;vertical-align:top;text-align:center;min-width:120px">
           <div class="one">
-              <img src='images/ned-logo.png' width="140" class="side-image">
+              <img src='images/ned-logo.png' style="width:70%; height:auto;" alt="project image">
           </div>
       </td>
-      <td style="padding:10px;width:75%;vertical-align:top">
+      <td style="padding:2.5%;width:75%;vertical-align:top">
           <papertitle><big><b>NED University of Engineering and Technology</b></big></papertitle>
           <br>
           <papertitle style="color:gray"><big>Research Assistant </big></papertitle><papertitle><big>- Department of Mechanical Engineering</big></papertitle>
@@ -390,19 +399,22 @@
           Jul 2019 - Jan 2020
           <br>
           <p align="justify">
-            Assisted research activities in Mechanical Department of NED University under the supervision of <a href="https://scholar.google.com/citations?user=jOthSmQAAAAJ&hl=en">Dr.-Ing. Usman Allauddin</a>            
+            <details>
+              <summary>Assisted research activities in Mechanical Department of NED University under the supervision of <a href="https://scholar.google.com/citations?user=jOthSmQAAAAJ&hl=en">Dr.-Ing. Usman Allauddin.</a></summary>                  
               <ul>
-                  <li align="justify">Conducted a comparative study to assess different RANS turbulence models for prediction of the secondary peak in Nusselt number resulting from
-                    a hydraulic jump in jet impingement cooling.</li>
+                
+                  <li align="justify">Conducted comparative studies to numerically assess different RANS turbulence models for prediction of the secondary peak in Nusselt number resulting from a hydraulic jump in jet impingement cooling.</li>
                   <li align="justify">Extensively reviewed literature and conducted numerical simulations related to impinging jets focusing on the influence of different types of fins,
                     surface topology, pulsating/synthetic jets, and nanofluids on heat transfer
                     characteristics. Collaborate on two peer-reviewed research papers based on findings.</li>
                   <li align="justify">Mentored undergraduate student groups, on their research project.</li>
               </ul>
+            </details>
+          </p>
               <div style="text-align: center;">
                 <img src="images/cfd_jet.gif" alt="cfd" style="width:75%; height:150px; border-radius: 5%; border: 2px solid #555"> 
               </div>
-          </p>
+          
           
       </td>
   </tr>
@@ -411,6 +423,77 @@
 </div>
 <hr class="soft">
 
+<!-- Education -->
+
+<button style="padding:2.5%; border:0px transparent; background-color: transparent;outline:none;"type="button" class="collapsible" data-toggle="collapse" data-target="#content-education" id="education">
+  <h2>Education</h2>
+</button>
+<div id="content-education" class="collapse in">
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+    <tr>
+        <td style="padding:2.5%;width:25%;vertical-align:top;text-align:center;min-width:120px">
+            
+                <img src='images/tum-logo.png' style="width:70%; height:auto;" alt="project image">
+            
+        </td>
+        <td style="padding:2.5%;width:75%;vertical-align:top">
+            <papertitle><big><b>Technical University of Munich</b></big></papertitle>
+            <br>
+            <papertitle style="color:gray"><big>Masters of Science </big></papertitle><papertitle><big>Computational Mechanics</big></papertitle>
+            <br>
+            Oct 2021 - Oct 2024
+            <br>
+            <p align="justify">
+                Open World 3D Scene Understanding using Foundation Models. <a href="https://opensu3d.github.io/">OpenSU3D (ICRA'25)</a>
+                <br>
+                <b>Course Work:</b>
+                <ul>
+                    <li align="justify">Computation in Engineering I & II (C++), Numerical Optimization, Elements of Machine Learning, Cyber Physical System, Advance Deep Learning for Physics, Professional Software Development,  Visual Data Analytics … </li> 
+                    <br>
+                </ul>   
+                <!--br>
+                <b>Course Work:</b>
+                <ul>
+                    <li align="justify"><b>Computation:</b> Advacnced Deep Learning in Physics, Computation in Engineering I (C++), Computation on Engineering II (C++), Cyber-Physical Systems Lab, Elements of Machine Learning, Functional Analysis and Computational Linear Algebra, Numerical Optimization - Robot Design and Control, Professional Software Development, Scientific Visualization, Software Lab  </li> 
+                    <br>
+                    <li align="justify"><b>Mechanics:</b> Advanced Fluid Mechanics, AI in Computational Mechanics, Computational Material Modeling I, Computational Material Modeling II, Computational Fluid Dynamics, Continuum Mechanics, Finite Element Methods I  </li>
+                    <br>
+                    
+                </ul-->
+              </p>
+
+        </td>
+    </tr>
+
+    <tr>
+      <td style="padding:2.5%;width:25%;vertical-align:top; text-align:center;min-width:120px">
+          <div class="one">
+              <img src='images/ned-logo.png' style="width:70%; height:auto;" alt="project image">
+          </div>
+      </td>
+      <td style="padding:2.5%;width:75%;vertical-align:top">
+          <papertitle><big><b>NED University of Engineering and Technology</b></big></papertitle>
+          <br>
+          <papertitle style="color:gray"><big>Bachelors of Science </big></papertitle><papertitle><big>Mechanical Engineering</big></papertitle>
+          <br>
+          Dec 2015 - Sep 2019
+          <br>
+          <p align="justify">
+              Numerical Investigation of Heat Transfer Enhancement Methods in Impinging Jets. <a href="https://doi.org/10.1002/htj.21986">Web Link</a>
+              <br>
+                <b>Course Work:</b>
+                <ul>
+                    <li align="justify">Advanced Calculus & Linear Algebra, Advanced Mathematical Techniques, Applied Probability & Statistics, Operations Management, Machine Control Systems, Clean Energy Technologies, Computer Programming & Applications …                      </li> 
+                    <br>
+                </ul>            
+            </p>
+      </td>
+  </tr>
+
+</tbody></table>
+</div>
+<hr class="soft">
 
 
         
@@ -425,8 +508,8 @@
           {% for cat in post.categories %}
           {% if cat == 'research' %}
           <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:140px">
-              <a href="{{post.image}}"><img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:120%; border-radius: 5%; border: 2px solid #555" /></a>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <a href="{{post.image}}"><img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%; border-radius: 5%; border: 2px solid #555" /></a>
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
@@ -438,6 +521,9 @@
               <br>
               {% if post.paper %}
               <a href="{{post.paper}}">paper</a> /
+              {% endif %}
+              {% if post.web %}
+              <a href="{{post.web}}">web</a> /
               {% endif %}
               {% if post.video %}
               <a href="{{post.video}}">video</a> /
@@ -466,87 +552,16 @@
         
 </div>
 <hr class="soft">
-<!-- Intell Projects 
 
+
+        <!-- Projects Section -->
+        <button style="padding:2.5%; border:0px transparent; background-color: transparent;outline:none;"type="button" class="collapsible" data-toggle="collapse" data-target="#content-projects" id="projects">
+          <h2>Projects</h2>
+        </button>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Intel Projects</h2>
-              <p>Besides my work on the RealSense depth sensors and the publications above, a sampling of my publicly disclosed work
-              </p>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'Intel' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <a href="{{post.image}}"><img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:120%; border-radius: 5%" /></a>
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              <em>{{post.categories}} {{post.course}}</em>
-              <br>
-              {{ post.date | date: "%Y-%m-%d" }}
-
-              <br>
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
-              {% endif %}
-              {% if post.patent %}
-              <a href="{{post.patent}}">patent</a> /
-              {% endif %}
-              {% if post.patent2 %}
-              <a href="{{post.patent2}}">patent #2</a> /
-              {% endif %}
-              {% if post.patent3 %}
-              <a href="{{post.patent3}}">patent #3</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.video2 %}
-              <a href="{{post.video2}}">video #2</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-        <br>
-        <br>
-        <br>
--->
-<!-- Other Projects -->        
-
-<button style="padding:2.5%; border:0px transparent; background-color: transparent;outline:none;"type="button" class="collapsible" data-toggle="collapse" data-target="#content-projects" id="projects">
-  <h2>Projects</h2>
-  </button>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <!--<h2>Projects</h2>-->
-              <p> These section include projects completed during courses.  
+              <p> These include coursework, assignments, side projects ... <a href="https://github.com/rafaymhddn">(GitHub)</a> 
               </p>
             </td>
           </tr>
@@ -557,8 +572,8 @@
           {% for cat in post.categories %}
           {% if cat != 'research' and cat != 'Intel' %}
           <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:140px">
-              <a href="{{post.image}}"><img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:120%; border-radius: 5%; border: 2px solid #555" /></a>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+              <a href="{{post.image}}"><img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%; border-radius: 5%; border: 2px solid #555" /></a>
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
@@ -606,6 +621,44 @@
           {% endfor %}
           {% endfor %}
         </table>
+        <hr class="soft">
+
+        <!-- Contact Section -->
+        <button style="padding:2.5%; border:0px transparent; background-color: transparent;outline:none;" type="button" class="collapsible" data-toggle="collapse" data-target="#content-contact" id="contact">
+          <h2>Contact</h2>
+        </button>
+        <div id="content-contact" class="collapse in">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tr>
+              <td style="padding:2.5%;width:100%;vertical-align:left">
+                <p style="text-align:left; font-size: 0.9rem; line-height: 1.4;">
+                  <b>Rafay Mohiuddin | M.Sc. TUM<br>
+                  📍 Munich, Germany<br>
+                  ✉️ <a href="mailto:rafay.mhddn@gmail.com">rafay.mhddn[at]gmail.com</a><br>
+                  🔗 <a href="https://linkedin.com/in/rafaymhddn/">linkedin.com/in/rafaymhddn/</a><br>
+                  🌐 <a href="https://rafaymhddn.github.io/">rafaymhddn.github.io/</a>
+                </p>
+
+                 <!-- Cal.com Button: opens popup -->
+                 <button data-cal-link="rafaymhddn/quickchat"
+                 style="background-color: #2d3748; color: white; border: 1px solid #4a5568; padding: 10px 15px; border-radius: 8px; cursor: pointer; font-size: 0.9rem; margin-top: 10px; font-family: sans-serif; font-weight: 500;">
+                    📅 Schedule a Quick Chat
+                    </button>
+
+                    <!-- Cal.com embed script: Initializes Cal and attaches to the button above -->
+                    <script type="text/javascript">
+                        (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+                        Cal("init", {origin:"https://cal.com"});
+                        Cal("ui", {"theme":"dark","hideEventTypeDetails":false,"layout":"month_view"});
+                    </script>
+                    <!-- Cal embed code ends -->
+              </td>
+            </tr>
+          </table>
+
+         
+        </div>
+        <hr class="soft">
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
@@ -617,6 +670,7 @@
             </td>
           </tr>
         </table>
+        
       </td>
     </tr>
   </table>
