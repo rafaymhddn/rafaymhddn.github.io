@@ -6,7 +6,7 @@ image: /images/paper-macro.png
 categories: research
 authors: "Usman Allauddin, <strong>Rafay Mohiuddin</strong>, Hafiz Mohammad Usman Khan, Naseem Uddin, Waqar A. Khan"
 subtitle: "Wiley "
-venue: "Journal of Heat Transfer"
+venue: "Heat Transfer (Q1 Joournal, 36% acceptance rate)"
 paper: https://doi.org/10.1002/htj.21986
 web: https://onlinelibrary.wiley.com/doi/10.1002/htj.21986
 ---
