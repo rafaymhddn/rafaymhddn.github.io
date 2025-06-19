@@ -57,6 +57,10 @@ url: "https://rafaymhddn.github.io/" # the base hostname & protocol for your sit
 #permalink: /:title/
 permalink: /
 
+collections:
+  pages:
+    output: true
+    permalink: /:name/ 
 
 # The release of Jekyll Now that you're using
 version: v1.2.0
