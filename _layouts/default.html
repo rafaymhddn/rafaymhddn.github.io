@@ -70,6 +70,18 @@
         padding: 0.2rem 0.4rem;
       }
     }
+
+    .banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.banner-image {
+  max-width: 90px;
+  border-radius: 8px;
+}
   </style>
 
   <!-- Google tag (gtag.js) -->
@@ -174,13 +186,12 @@
 <!-- Banner -->
 
 <div id="content-news" class="collapse in">
-<div style="display: flex; justify-content: center; align-items: center; height: 100px;">
-  <img src="images/banner_gif.gif" alt="Fun Banner Gif" style="max-width: 90px; border-radius: 8px;">
-</div>
+  <div class="banner-container">
+    <img src="images/banner_gif.gif" alt="Fun Banner Gif" class="banner-image">
+  </div>
 </div>
 <hr class="soft">
          
-
 
 <!-- News -->
 <button style="padding:2.5%; border:0px transparent; background-color: transparent;outline:none;" type="button" class="collapsible" data-toggle="collapse" data-target="#content-news" id="news">
