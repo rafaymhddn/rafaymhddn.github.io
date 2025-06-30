@@ -9,7 +9,6 @@ subtitle: "<strong style='color:red;'>IEEE</strong>"
 venue: "<strong style='color:red;'>International Conference on Robotics and Automation (ICRA'2025)</strong>"
 paper: https://opensu3d.github.io/
 web: https://opensu3d.github.io/
-video: https://www.youtube.com/watch?v=aeH3zh0VDYM
 #code: https://github.com/opensu3d/opensu3d.github.io
 ---
 
