@@ -6,7 +6,7 @@ image: /images/paper-micro-3.png
 categories: research
 authors: "Usman Allauddin, <strong>Rafay Mohiuddin</strong>, Hafiz Mohammad Usman Khan, Naseem Uddin, Waqar A. Khan"
 subtitle: "Wiley "
-venue: "Heat Transfer (Q1 Journal, 26% acceptance rate)"
+venue: "Heat Transfer, 2020 <strong style='color:red;'>(Q1 Journal, 26% acceptance rate)</strong>"
 paper: https://doi.org/10.1002/htj.21986
 web: https://onlinelibrary.wiley.com/doi/10.1002/htj.21986
 ---

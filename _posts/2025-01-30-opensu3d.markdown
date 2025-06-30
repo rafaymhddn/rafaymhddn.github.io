@@ -5,10 +5,11 @@ date:   2025-01-30 22:20:59 +00:00
 image: /images/gif_opensu3d.gif
 categories: research
 authors: "<strong>Rafay Mohiuddin</strong>,Sai Manoj Prakhya, Fiona Collins, Ziyuan Liu, Andre Borrmann"
-subtitle: "IEEE"
-venue: "Internatioanl Conference on Robotics and Automation (ICRA)"
-paper: https://arxiv.org/pdf/2407.14279
+subtitle: "<strong style='color:red;'>IEEE</strong>"
+venue: "<strong style='color:red;'>International Conference on Robotics and Automation (ICRA'2025)</strong>"
+paper: https://opensu3d.github.io/
 web: https://opensu3d.github.io/
+video: https://www.youtube.com/watch?v=aeH3zh0VDYM
 #code: https://github.com/opensu3d/opensu3d.github.io
 ---
 
