@@ -225,9 +225,24 @@ table {
   }
 }
 
-#content-education p,
-#content-education span,
-#content-education div {
-  margin: 0;
-  line-height: 1.4;
+.education-section {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0; /* remove bottom margin */
+}
+
+.education-entry {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0; /* override any default spacing */
+}
+
+.education-entry + .education-entry {
+  margin-top: 0; /* no top margin for consecutive entries */
+}
+
+.education-logo {
+  margin-right: 20px;
+  width: 60px;
+  height: auto;
 }
