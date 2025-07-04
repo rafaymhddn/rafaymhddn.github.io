@@ -224,3 +224,10 @@ table {
     padding: 0.2rem 0.4rem;
   }
 }
+
+#content-education p,
+#content-education span,
+#content-education div {
+  margin: 0;
+  line-height: 1.4;
+}
