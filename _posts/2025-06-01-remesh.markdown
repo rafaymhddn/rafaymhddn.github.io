@@ -13,4 +13,4 @@ course:
 
 ---    
 
-Full stack SaaD platform for 3D Content Generation.
+Full-Stack SaaS platform for 3D Content & Environment Generation.
