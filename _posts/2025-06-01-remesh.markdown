@@ -3,9 +3,13 @@ layout: post
 title:  "3D Content Generation Platform"
 date:   2025-05-01 22:20:59 +00:00
 image: /images/remesh.gif
-categories: ANTLER S25
+categories: Antler
 author: "Rafay"
 subtitle: "startup"
+poster: 
+paper:
+code:
+course:
 
 ---    
 
