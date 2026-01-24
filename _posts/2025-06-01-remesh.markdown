@@ -7,6 +7,6 @@ categories: ANTLER S25
 author: "Rafay"
 subtitle: "startup"
 
----
+---    
 
 Full stack SaaD platform for 3D Content Generation.
