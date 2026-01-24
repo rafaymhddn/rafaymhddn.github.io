@@ -136,8 +136,9 @@ span.highlight {
 
 .news-scroll ul {
   margin-top: 0;
-  padding-left: 20px;
+  padding-left: 0;
   font-family: 'Lato';
+  list-style-position: inside;
 }
 
 .news-scroll li {
@@ -157,6 +158,10 @@ span.highlight {
 
 .date-purple {
   color: #9b59b6;
+}
+
+.news-date {
+  color: #1a73e8;
 }
 
 /* Table Styles */
@@ -357,7 +362,8 @@ p:last-child {
 
 .news-list {
   margin-top: 0;
-  padding-left: 60px;
+  padding-left: 0;
+  list-style-position: inside;
 }
 
 .news-cell {
