@@ -38,6 +38,14 @@ a {
   font-display: auto;
 }
 
+:root {
+  --page-max-width: 820px;
+  --section-padding: 2.5%;
+  --logo-frame-size: 72px;
+  --border-color: #d1d5db;
+  --text-color: #1f2937;
+}
+
 strong {
   font-family: 'Lato';
   font-size: 14px;
@@ -159,6 +167,226 @@ table {
   border-collapse: separate;
   margin-right: auto;
   margin-left: auto;
+}
+
+body {
+  margin: 0;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+p {
+  margin: 0 0 0.75rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.page-table {
+  width: 100%;
+  max-width: var(--page-max-width);
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.page-cell {
+  padding: 0;
+}
+
+.section-table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section-table td {
+  padding: var(--section-padding);
+  vertical-align: top;
+}
+
+.section-toggle {
+  padding: var(--section-padding);
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font-family: 'Lato';
+}
+
+.education-table .entry-logo-cell {
+  width: 15%;
+  min-width: 120px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.education-table .entry-content-cell {
+  width: 85%;
+}
+
+.experience-table .entry-logo-cell {
+  width: 25%;
+  min-width: 120px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.experience-table .entry-content-cell {
+  width: 75%;
+}
+
+.entry-media-cell {
+  width: 25%;
+  min-width: 120px;
+  vertical-align: middle;
+}
+
+.entry-text-cell {
+  width: 75%;
+  vertical-align: middle;
+}
+
+.name-table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+}
+
+.name-title {
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+}
+
+.name-cell {
+  width: 63%;
+  vertical-align: middle;
+  padding: 0;
+}
+
+.intro-table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -10px;
+}
+
+.intro-text-cell {
+  width: 60%;
+  vertical-align: middle;
+  padding: var(--section-padding);
+}
+
+.intro-photo-cell {
+  width: 30%;
+  max-width: 30%;
+  vertical-align: top;
+  padding: var(--section-padding);
+}
+
+.intro-photo-wrap {
+  margin-top: 50px;
+}
+
+.banner-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-image {
+  padding: 1.5%;
+  width: 95%;
+  max-width: 95%;
+  height: auto;
+  display: block;
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 5%;
+  display: block;
+}
+
+.news-list {
+  margin-top: 0;
+  padding-left: 60px;
+}
+
+.news-cell {
+  padding: 0;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.contact-table td {
+  padding: var(--section-padding);
+  width: 100%;
+  vertical-align: left;
+}
+
+.contact-block {
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.footer-table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.logo-frame {
+  width: var(--logo-frame-size);
+  height: var(--logo-frame-size);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.card-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 2px solid #555;
+}
+
+hr.soft {
+  border: 0;
+  height: 1px;
+  background: var(--border-color);
+  margin: 24px 0;
 }
 
 

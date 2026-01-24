@@ -27,9 +27,9 @@
 
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <table class="page-table">
     <tr style="padding:px">
-      <td style="padding:0px">
+      <td class="page-cell">
 
 <!-- Section Tab -->
 <div class="nav-container">
@@ -45,20 +45,20 @@
 </div>
 
 <!-- Name -->
-        <table id="name" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:40px;"><tbody>
+        <table id="name" class="name-table"><tbody>
           <tr style="padding:0px">                                    
-            <td style="padding:0%;width:63%;vertical-align:middle">
+            <td class="name-cell">
               <p style="text-align:center;margin:0;">
-                <h1 style="font-size: 40px;text-align:center;margin:0;"><name>Rafay Mohiuddin</name></h1>
+                <h1 class="name-title"><name>Rafay Mohiuddin</name></h1>
               </p>
             </td>
           </tr>            
         </table>
 
 <!-- Introduction -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:-10px;">
+        <table class="intro-table">
           <tr style="padding:0px">
-            <td style="padding:2.5%;width:60%;vertical-align:middle">
+            <td class="intro-text-cell">
             
               <br>
               
@@ -95,10 +95,10 @@
               </p>
               
             </td>
-            <td style="padding:2.5%;width:30%;max-width:30%; vertical-align: top;">
-                <div style="margin-top:50px;">  <!-- fine-tune this value -->
+            <td class="intro-photo-cell">
+                <div class="intro-photo-wrap">  <!-- fine-tune this value -->
                   <a href="images/dp24of.jpeg">
-                    <img src="images/dp24of.jpeg" style="width:100%;max-width:100%; border-radius: 5%" alt="profile photo" class="hoverZoomLink"/>
+                    <img src="images/dp24of.jpeg" class="profile-image hoverZoomLink" alt="profile photo"/>
                   </a>              
                 </div>
               </td>
@@ -112,8 +112,8 @@
 <!-- Banner -->
 
 <div id="content-news" class="collapse in">
-<div style="display: flex; justify-content: center; align-items: center;">
-  <img src="images/banner_gif.gif" alt="Fun Banner Gif", style="padding:1.5%;width:95%;max-width:95%";>
+<div class="banner-wrap">
+  <img src="images/banner_gif.gif" alt="Fun Banner Gif" class="banner-image">
 </div>
 </div>
 <hr class="soft">
@@ -121,16 +121,16 @@
 
 
 <!-- News -->
-<button style="padding:2.5%; border:0px transparent; background-color: transparent;outline:none;" type="button" class="collapsible" data-toggle="collapse" data-target="#content-news" id="news">
+<button type="button" class="collapsible section-toggle" data-toggle="collapse" data-target="#content-news" id="news">
   <h2>News</h2>
 </button>
 <div id="content-news" class="collapse in">
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <table class="section-table">
     <tr>
-      <td style="padding:0%;width:100%;vertical-align:middle">
+      <td class="news-cell">
         <!-- Limit to 5 visible items, scroll rest -->
         <div style="max-height: 8.4em; overflow-y: auto;">
-          <ul style="margin-top: 0; padding-left: 60px;">
+          <ul class="news-list">
             <li align="justify"><span style="color:red">[05/2025]</span> <a href="https://opensu3d.github.io/">OpenSU3D</a> was presented at ICRA'25 on 22 May 2025 📄</li>
             <li align="justify"><span style="color:blue">[03/2025]</span> Accepted into the ATLER Entrepreneurship in Residence program 🚀</li>
             <li align="justify"><span style="color:red">[01/2025]</span> <b>OpenSU3D</b> paper accepted at ICRA'25 — check out the <a href="https://opensu3d.github.io/">Project Page</a> 📄 </li>
@@ -164,20 +164,20 @@
 
         
 <!-- Publications -->
-<button style="padding:2.5%; border:0px transparent; background-color: transparent;outline:none;"type="button" class="collapsible" data-toggle="collapse" data-target="#content-publications" id="publications">
+<button type="button" class="collapsible section-toggle" data-toggle="collapse" data-target="#content-publications" id="publications">
   <h2>Publications</h2>
   </button>
 <div id="content-publication" class="collapse in">
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table class="section-table">
           {% for post in site.posts %}
           {% for cat in post.categories %}
           {% if cat == 'research' %}
           <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <a href="{{post.image}}"><img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%; border-radius: 5%; border: 2px solid #555" /></a>
+            <td class="entry-media-cell">
+              <a href="{{post.image}}"><img src="{{post.image}}" alt="project image" class="card-image" /></a>
             </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
+            <td class="entry-text-cell">
               <h3>{{post.title}}</h3>
               <br>
               {{post.authors}}
@@ -224,14 +224,14 @@
 
 
         <!-- Contact Section -->
-        <button style="padding:2.5%; border:0px transparent; background-color: transparent;outline:none;" type="button" class="collapsible" data-toggle="collapse" data-target="#content-contact" id="contact">
+        <button type="button" class="collapsible section-toggle" data-toggle="collapse" data-target="#content-contact" id="contact">
           <h2>Contact</h2>
         </button>
         <div id="content-contact" class="collapse in">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <table class="section-table contact-table">
             <tr>
-              <td style="padding:2.5%;width:100%;vertical-align:left">
-                <p style="text-align:left; font-size: 0.9rem; line-height: 1.4;">
+              <td>
+                <p class="contact-block">
                   <b>Rafay Mohiuddin | M.Sc. TUM<br>
                   📍 Munich, Germany<br>
                   ✉️ <a href="mailto:rafay.mhddn@gmail.com">rafay.mhddn[at]gmail.com</a><br>
@@ -260,7 +260,7 @@
         </div>
         <hr class="soft">
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table class="footer-table">
           <tr>
             <td style="padding:0px">
               <br>
@@ -279,4 +279,3 @@
 
 
 </html>
-

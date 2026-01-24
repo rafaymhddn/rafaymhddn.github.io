@@ -27,9 +27,9 @@
 
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <table class="page-table">
     <tr style="padding:px">
-      <td style="padding:0px">
+      <td class="page-cell">
 
 <!-- Section Tab -->
 <div class="nav-container">
@@ -50,27 +50,27 @@
 
 
 
-<button style="padding:2.5%; border:0px transparent; background-color: transparent;outline:none;"type="button" class="collapsible" data-toggle="collapse" data-target="#content-projects" id="projects">
+<button type="button" class="collapsible section-toggle" data-toggle="collapse" data-target="#content-projects" id="projects">
     <h2>Projects</h2>
   </button>
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <table class="section-table">
     <tr>
-      <td style="padding:2.5%;width:100%;vertical-align:middle">
+      <td>
         <p> These include coursework, assignments, side projects ... <a href="https://github.com/rafaymhddn">(GitHub)</a> 
         </p>
       </td>
     </tr>
   </table>
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <table class="section-table">
 
     {% for post in site.posts %}
     {% for cat in post.categories %}
     {% if cat != 'research' and cat != 'Intel' %}
     <tr>
-      <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-        <a href="{{post.image}}"><img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%; border-radius: 5%; border: 2px solid #555" /></a>
+      <td class="entry-media-cell">
+        <a href="{{post.image}}"><img src="{{post.image}}" alt="project image" class="card-image" /></a>
       </td>
-      <td style="padding:2.5%;width:75%;vertical-align:middle">
+      <td class="entry-text-cell">
         <h3>{{post.title}}</h3>
         <br>
         <em>{{post.categories}} {{post.course}}</em>
@@ -126,7 +126,7 @@
     
 
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <table class="footer-table">
             <tr>
               <td style="padding:0px">
                 <br>
