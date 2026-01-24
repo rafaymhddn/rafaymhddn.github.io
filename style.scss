@@ -226,6 +226,11 @@ p:last-child {
   padding: 1.2% 1.2%;
 }
 
+.education-table {
+  padding-left: 12px;
+  width: calc(100% - 12px);
+}
+
 .education-table .entry-logo-cell {
   width: 16%;
   min-width: 88px;
@@ -246,6 +251,11 @@ p:last-child {
 
 .experience-table td {
   padding: 1.2% 1.2%;
+}
+
+.experience-table {
+  padding-left: 12px;
+  width: calc(100% - 12px);
 }
 
 .experience-table .entry-logo-cell {
