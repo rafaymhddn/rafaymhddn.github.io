@@ -223,14 +223,19 @@ p:last-child {
 }
 
 .education-table .entry-logo-cell {
-  width: 15%;
+  width: 25%;
   min-width: 120px;
   text-align: center;
   vertical-align: middle;
 }
 
 .education-table .entry-content-cell {
-  width: 85%;
+  width: 75%;
+}
+
+.education-table .entry-summary {
+  margin: 0.3rem 0 0;
+  line-height: 1.4;
 }
 
 .experience-table .entry-logo-cell {
@@ -242,6 +247,11 @@ p:last-child {
 
 .experience-table .entry-content-cell {
   width: 75%;
+}
+
+.experience-table .entry-summary {
+  margin: 0.3rem 0 0;
+  line-height: 1.4;
 }
 
 .entry-media-cell {
