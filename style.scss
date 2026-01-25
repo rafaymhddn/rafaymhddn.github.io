@@ -350,13 +350,14 @@ p:last-child {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 16px;
-  padding: 8px 0 4px;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 4px 0;
 }
 
 .logo-strip-item {
-  width: 96px;
-  height: 34px;
+  width: 104px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
