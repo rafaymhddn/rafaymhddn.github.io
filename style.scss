@@ -337,13 +337,27 @@ p:last-child {
 }
 
 .intro-photo-wrap {
-  margin-top: 12px;
+  margin-top: 1px;
 }
 
 .banner-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.logo-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 0 4px;
+}
+
+.logo-strip-image {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
 }
 
 .banner-image {
