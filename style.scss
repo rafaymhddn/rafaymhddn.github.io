@@ -450,8 +450,9 @@ p:last-child {
   display: block;
   max-width: 100%;
   height: auto;
-  border-radius: 6px;
-  border: 2px solid #555;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.12);
 }
 
 hr.soft {
