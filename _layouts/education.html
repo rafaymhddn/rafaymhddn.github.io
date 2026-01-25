@@ -36,8 +36,13 @@
     <ul class="nav-menu">
         <li class="nav-item"><a href="{{ site.baseurl }}/" class="nav-link">Home</a></li>
         <li class="nav-item"><a href="{{ site.baseurl }}/#news" class="nav-link">News</a></li>
+        {% if site.one_page %}
+        <li class="nav-item"><a href="{{ site.baseurl }}/#education" class="nav-link">Education</a></li>
+        <li class="nav-item"><a href="{{ site.baseurl }}/#experience" class="nav-link">Experience</a></li>
+        {% else %}
         <li class="nav-item"><a href="{{ site.baseurl }}/education/" class="nav-link">Education</a></li>
         <li class="nav-item"><a href="{{ site.baseurl }}/experience/" class="nav-link">Experience</a></li>
+        {% endif %}
         <li class="nav-item"><a href="{{ site.baseurl }}/#publications" class="nav-link">Publications</a></li>
         <li class="nav-item"><a href="{{ site.baseurl }}/projects/" class="nav-link">Projects</a></li>
         <li class="nav-item"><a href="{{ site.baseurl }}/#contact" class="nav-link">Contact</a></li>
@@ -45,62 +50,7 @@
 </div>
 
 
-<div class="section-toggle" id="education">
-    <h2>Education</h2>
-</div>
-  <table class="section-table education-table"><tbody>
-    <tr style="padding-top: 0; padding-bottom: 0;">
-      <td class="entry-logo-cell">
-          <div class="logo-frame">
-              <img src='{{ site.baseurl }}/images/logo/unibonn-logo.png' class="logo-image" alt="University of Bonn logo">
-          </div>
-      </td>
-      <td class="entry-content-cell">
-          <papertitle><big><b>Ph.D, University of Bonn</b></big></papertitle>
-          <br>
-          12.2025 - Present | Bonn, Germany
-          <br>
-          <p align="justify" class="entry-summary">CS PhD Candidate @ Robotics Perception & Learning Lab. <br>
-            Area of Research - Spatial/Physical AI, Robotics Learing, Open World Understanding.
-          </p>
-      </td>
-    </tr>
-
-    <tr style="padding-top: 0; padding-bottom: 0;">
-      <td class="entry-logo-cell">
-          <div class="logo-frame">
-              <img src='{{ site.baseurl }}/images/logo/tum-logo.png' class="logo-image" alt="TUM logo">
-          </div>
-      </td>
-      <td class="entry-content-cell">
-          <papertitle><big><b>M.Sc, Technical University of Munich</b></big></papertitle>
-          <br>
-          10.2021 - 08.2024 | Munich, Germany
-          <br>
-          <p align="justify" class="entry-summary">
-            Thesis: Open World 3D Scene Understanding using Foundation Models. <a href="https://opensu3d.github.io/">(IEEE, ICRA 2025)</a>
-          </p>
-      </td>
-    </tr>
-
-    <tr style="padding-top: 0; padding-bottom: 0;">
-      <td class="entry-logo-cell">
-          <div class="logo-frame">
-              <img src='{{ site.baseurl }}/images/logo/ned-logo.png' class="logo-image" alt="NED University logo">
-          </div>
-      </td>
-      <td class="entry-content-cell">
-          <papertitle><big><b>B.Eng, NED University of Engineering and Technology</b></big></papertitle>
-          <br>
-          12.2015 - 08.2019 | Karachi, Pakistan
-          <br>
-          <p align="justify" class="entry-summary">
-            Thesis: Numerical Investigation of Heat Transfer Enhancement in Impinging Jets. <a href="https://doi.org/10.1002/htj.21986">(Wiley, Heat Transfer)</a>
-          </p>
-      </td>
-    </tr>
-  
-  </tbody></table>
+{% include education_section.html %}
 
   
   <hr class="soft">

@@ -8,6 +8,9 @@ name: Rafay
 # Short bio or description (displayed in the header)
 description: always curious
 
+# Toggle between one-page home layout and separate Education/Experience pages.
+one_page: true
+
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: images/main/dp4.jpeg
 
