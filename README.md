@@ -1,14 +1,48 @@
-# Personal Website
+# Personal Website (Jekyll)
 
-This repo is built on a fork of **Jekyll Now** from [this repository](https://github.com/barryclark/jekyll-now). **Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
+This is a Jekyll-powered personal website based on the Jekyll Now starter, with a layout inspired by Jon Barron's and Barry Clark site. You are welcome to use this template, but please do not reuse any personal content or media from this repository.
 
-The website design is just a modification of [Jon Barron's website](https://jonbarron.info/) and is converted for my own use. **Feel free to use template for your own purposes**, but please respect copyright for all the images/content in my `images`, `pdfs`, `_posts` folders. 
+## Features
+- Fast, static site hosted on GitHub Pages
+- Simple page and post structure
+- Easy theming with Sass in `_sass` and `style.scss`
+- Custom pages under `_pages` and layouts in `_layouts`
 
+## Quick start
+1) Fork or clone this repository.
+2) Install dependencies:
+   ```bash
+   bundle install
+   ```
+3) Run the site locally:
+   ```bash
+   bundle exec jekyll serve
+   ```
+4) Open `http://localhost:4000` in your browser.
 
+## Customization
+- Site settings: update `_config.yml` (title, description, base URL, social links).
+- Content:
+  - Posts live in `_posts` and follow the `YYYY-MM-DD-title.md` pattern.
+  - Pages live in `_pages`.
+- Assets:
+  - Images in `images`
+  - PDFs in `pdfs`
+- Styling:
+  - Sass partials in `_sass`
+  - Main stylesheet in `style.scss`
 
-## issues
-* In general, jekyll will try to build a full page for every post. I skip that by forcing `permalink: /`. This creates multiple entries in sitemap.xml for index.html but is otherwise fine. 
-* If you want multiple paragraphs, consider using `excerpt_separator: <!--more-->` in `_config.yml`, for my own use I didn't need this. 
-* My own posts have lots of extra stuff left over from my old jekyll design ("author", long descriptions, etc.), feel free to ignore them
-* If you use this, I'd appreciate a link back either to this repo or my personal website so others can find this too. 
+## Deployment (GitHub Pages)
+1) Push your changes to your GitHub repo.
+2) In GitHub, go to Settings → Pages.
+3) Select the branch you want to deploy (typically `main`) and the root folder.
+4) GitHub Pages will build the site automatically.
 
+## Content and attribution
+- This repo is based on Jekyll Now: `https://github.com/barryclark/jekyll-now`
+- Visual inspiration: `https://jonbarron.info/`
+- Please remove or replace any personal content in `images`, `pdfs`, and `_posts`.
+- If you reuse the template, a link back is appreciated.
+
+## License
+See `LICENSE`.
