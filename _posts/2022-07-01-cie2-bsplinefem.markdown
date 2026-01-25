@@ -2,7 +2,7 @@
 layout: post
 title:  "FEM - Discritization using B-Spline basis"
 date:   2022-07-01 22:20:59 +00:00
-image: /images/cie-2bspline.jpeg
+image: /images/projects/cie-2bspline.jpeg
 categories: TUM
 author: "Rafay"
 subtitle: "fem"

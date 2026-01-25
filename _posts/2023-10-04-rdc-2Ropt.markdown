@@ -2,7 +2,7 @@
 layout: post
 title:  "2R-planar robot: Bi-level Optimisation"
 date:   2023-4-10 22:20:59 +00:00
-image: /images/rdc-2Ropt2.gif
+image: /images/projects/rdc-2Ropt2.gif
 categories: TUM
 author: "Rafay"
 subtitle: "rdc"

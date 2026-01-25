@@ -2,7 +2,7 @@
 layout: post
 title:  "Implicit Geomtry"
 date:   2022-02-01 22:20:59 +00:00
-image: /images/cie1-implicitgeom.png
+image: /images/projects/cie1-implicitgeom.png
 categories: TUM
 author: "Rafay"
 subtitle: "fem"

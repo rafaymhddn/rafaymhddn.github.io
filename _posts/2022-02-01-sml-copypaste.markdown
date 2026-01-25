@@ -2,7 +2,7 @@
 layout: post
 title:  "Copy Move Forgery Detection and Localization"
 date:   2023-01-01 22:20:59 +00:00
-image:  /images/sml-prg.png 
+image:  /images/projects/sml-prg.png 
 categories: TUM
 author: "Rafay"
 subtitle: "Elements of Machine Learning scientific visualization"

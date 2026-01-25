@@ -2,7 +2,7 @@
 layout: post
 title:  "Optical Process Control for extrusion-based Additive Manufacturing methods in construction"
 date:   2023-04-1 22:20:59 +00:00
-image: /images/gif_print.gif
+image: /images/papers/gif_print.gif
 categories: research
 authors: "<strong>Rafay Mohiuddin</strong>, Miranda Cruz Policroniades, Martin Slepicka, André Borrmann"
 subtitle: "ISARC"

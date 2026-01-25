@@ -2,7 +2,7 @@
 layout: post
 title:  "OpenSU3D: Open Word 3D Scene Understanding using Foundation Models"
 date:   2025-01-30 22:20:59 +00:00
-image: /images/gif_opensu3d.gif
+image: /images/papers/gif_opensu3d.gif
 categories: research
 authors: "<strong>Rafay Mohiuddin</strong>,Sai Manoj Prakhya, Fiona Collins, Ziyuan Liu, Andre Borrmann"
 subtitle: "<strong style='color:red;'>IEEE</strong>"
