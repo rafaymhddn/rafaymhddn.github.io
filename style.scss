@@ -354,9 +354,19 @@ p:last-child {
   padding: 8px 0 4px;
 }
 
-.logo-strip-image {
+.logo-strip-item {
+  width: 96px;
   height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-strip-image {
+  max-height: 100%;
+  max-width: 100%;
   width: auto;
+  height: auto;
   object-fit: contain;
 }
 
