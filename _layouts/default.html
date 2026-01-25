@@ -37,16 +37,31 @@
   <ul class="nav-menu">
       <li class="nav-item"><a href="{{ site.baseurl }}/" class="nav-link">Home</a></li>
       <li class="nav-item"><a href="#news" class="nav-link">News</a></li>
-      {% if site.one_page %}
+      {% if site.one_page_education %}
       <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-      <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
       {% else %}
       <li class="nav-item"><a href="{{ site.baseurl }}/education/" class="nav-link">Education</a></li>
+      {% endif %}
+      {% if site.one_page_experience %}
+      <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+      {% else %}
       <li class="nav-item"><a href="{{ site.baseurl }}/experience/" class="nav-link">Experience</a></li>
       {% endif %}
+      {% if site.one_page_publications %}
       <li class="nav-item"><a href="#publications" class="nav-link">Publications</a></li>
+      {% else %}
+      <li class="nav-item"><a href="{{ site.baseurl }}/publications/" class="nav-link">Publications</a></li>
+      {% endif %}
+      {% if site.one_page_projects %}
+      <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+      {% else %}
       <li class="nav-item"><a href="{{ site.baseurl }}/projects/" class="nav-link">Projects</a></li>
+      {% endif %}
+      {% if site.one_page_contact %}
       <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      {% else %}
+      <li class="nav-item"><a href="{{ site.baseurl }}/contact/" class="nav-link">Contact</a></li>
+      {% endif %}
   </ul>
 </div>
 
@@ -177,113 +192,35 @@
 </div>
 <hr class="soft">
   
-{% if site.one_page %}
+{% if site.one_page_experience %}
 <!-- Experience -->
 {% include experience_section.html %}
 <hr class="soft">
+{% endif %}
 
 <!-- Education -->
+{% if site.one_page_education %}
 {% include education_section.html %}
 <hr class="soft">
 {% endif %}
         
 <!-- Publications -->
-<button type="button" class="collapsible section-toggle" data-toggle="collapse" data-target="#content-publications" id="publications">
-  <h2>Publications</h2>
-  </button>
-<div id="content-publication" class="collapse in">
-
-        <table class="section-table">
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'research' %}
-          <tr>
-            <td class="entry-media-cell">
-              <a href="{{post.image}}"><img src="{{post.image}}" alt="project image" class="card-image" /></a>
-            </td>
-            <td class="entry-text-cell">
-              <h3>{{post.title}}</h3>
-              <br>
-              {{post.authors}}
-
-              <br>
-              <em>{{post.subtitle}} - {{post.venue}}</em> 
-              <br>
-              {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
-              {% endif %}
-              {% if post.web %}
-              <a href="{{post.web}}">web</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-        <br>
-        
-        <br>
-        <br>
-        
-</div>
+{% if site.one_page_publications %}
+{% include publications_section.html show_year=false %}
 <hr class="soft">
+{% endif %}
 
+<!-- Projects Section -->
+{% if site.one_page_projects %}
+{% include projects_section.html %}
+<hr class="soft">
+{% endif %}
 
-        <!-- Projects Section -->
-
-
-        <!-- Contact Section -->
-        <button type="button" class="collapsible section-toggle" data-toggle="collapse" data-target="#content-contact" id="contact">
-          <h2>Contact</h2>
-        </button>
-        <div id="content-contact" class="collapse in">
-          <table class="section-table contact-table">
-            <tr>
-              <td>
-                <p class="contact-block">
-                  <b>Rafay Mohiuddin<br>
-                  🧭 Bonn,Germany<br>
-                  ✉️ <a href="mailto:rafay.mhddn@gmail.com">rafay.mhddn[at]gmail.com</a><br>
-                </p>
-
-                 <!-- Cal.com Button: opens popup -->
-              
-                 <button data-cal-link="rafaymhddn/quickchat"
-                 style="background-color: #2d3748; color: white; border: 1px solid #4a5568; padding: 10px 15px; border-radius: 8px; cursor: pointer; font-size: 0.9rem; margin-top: 10px; font-family: sans-serif; font-weight: 500;">
-                    Schedule a Quick Chat
-                    </button>
-              
-                  <!-- Cal.com embed script: Initializes Cal and attaches to the button above -->
-              
-                  <script type="text/javascript">
-                      (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-                      Cal("init", {origin:"https://cal.com"});
-                      Cal("ui", {"theme":"dark","hideEventTypeDetails":false,"layout":"month_view"});
-                  </script>
-              
-                <!-- Cal embed code ends -->
-              </td>
-            </tr>
-          </table>
-
-         
-        </div>
-        <hr class="soft">
+<!-- Contact Section -->
+{% if site.one_page_contact %}
+{% include contact_section.html %}
+<hr class="soft">
+{% endif %}
 
         <table class="footer-table">
           <tr>

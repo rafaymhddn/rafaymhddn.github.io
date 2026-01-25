@@ -1,0 +1,33 @@
+<button type="button" class="collapsible section-toggle" data-toggle="collapse" data-target="#content-contact" id="contact">
+  <h2>Contact</h2>
+</button>
+<div id="content-contact" class="collapse in">
+  <table class="section-table contact-table">
+    <tr>
+      <td>
+        <p class="contact-block">
+          <b>Rafay Mohiuddin<br>
+          🧭 Bonn,Germany<br>
+          ✉️ <a href="mailto:rafay.mhddn@gmail.com">rafay.mhddn[at]gmail.com</a><br>
+        </p>
+
+         <!-- Cal.com Button: opens popup -->
+      
+         <button data-cal-link="rafaymhddn/quickchat"
+         style="background-color: #2d3748; color: white; border: 1px solid #4a5568; padding: 10px 15px; border-radius: 8px; cursor: pointer; font-size: 0.9rem; margin-top: 10px; font-family: sans-serif; font-weight: 500;">
+            Schedule a Quick Chat
+            </button>
+      
+          <!-- Cal.com embed script: Initializes Cal and attaches to the button above -->
+      
+          <script type="text/javascript">
+              (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+              Cal("init", {origin:"https://cal.com"});
+              Cal("ui", {"theme":"dark","hideEventTypeDetails":false,"layout":"month_view"});
+          </script>
+      
+        <!-- Cal embed code ends -->
+      </td>
+    </tr>
+  </table>
+</div>
