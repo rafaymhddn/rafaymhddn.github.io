@@ -36,16 +36,31 @@
     <ul class="nav-menu">
         <li class="nav-item"><a href="{{ site.baseurl }}/" class="nav-link">Home</a></li>
         <li class="nav-item"><a href="{{ site.baseurl }}/#news" class="nav-link">News</a></li>
-        {% if site.one_page %}
+        {% if site.one_page_education %}
         <li class="nav-item"><a href="{{ site.baseurl }}/#education" class="nav-link">Education</a></li>
-        <li class="nav-item"><a href="{{ site.baseurl }}/#experience" class="nav-link">Experience</a></li>
         {% else %}
         <li class="nav-item"><a href="{{ site.baseurl }}/education/" class="nav-link">Education</a></li>
+        {% endif %}
+        {% if site.one_page_experience %}
+        <li class="nav-item"><a href="{{ site.baseurl }}/#experience" class="nav-link">Experience</a></li>
+        {% else %}
         <li class="nav-item"><a href="{{ site.baseurl }}/experience/" class="nav-link">Experience</a></li>
         {% endif %}
+        {% if site.one_page_publications %}
         <li class="nav-item"><a href="{{ site.baseurl }}/#publications" class="nav-link">Publications</a></li>
+        {% else %}
+        <li class="nav-item"><a href="{{ site.baseurl }}/publications/" class="nav-link">Publications</a></li>
+        {% endif %}
+        {% if site.one_page_projects %}
+        <li class="nav-item"><a href="{{ site.baseurl }}/#projects" class="nav-link">Projects</a></li>
+        {% else %}
         <li class="nav-item"><a href="{{ site.baseurl }}/projects/" class="nav-link">Projects</a></li>
+        {% endif %}
+        {% if site.one_page_contact %}
         <li class="nav-item"><a href="{{ site.baseurl }}/#contact" class="nav-link">Contact</a></li>
+        {% else %}
+        <li class="nav-item"><a href="{{ site.baseurl }}/contact/" class="nav-link">Contact</a></li>
+        {% endif %}
     </ul>
 </div>
 
