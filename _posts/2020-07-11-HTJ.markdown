@@ -4,7 +4,7 @@ title:  "Nanoscale heat transfer investigation of an array of impinging jet syst
 date:   2020-11-11 21:21:53 +00:00
 image: /images/papers/paper-macro2.png
 categories: research
-authors: "Usman Allauddin, <strong>Rafay Mohiuddin</strong>, Hafiz Mohammad Usman Khan, Naseem Uddin, Waqar A. Khan"
+authors: "Usman Allauddin, <strong>Rafay Mohiuddin</strong>, Hafiz M. Usman Khan, Naseem Uddin, Waqar A. Khan"
 subtitle: "Wiley "
 venue: "Heat Transfer, 2020 <strong style='color:red;'>(Q1 Journal, 26% acceptance rate)</strong>"
 paper: https://doi.org/10.1002/htj.21986
