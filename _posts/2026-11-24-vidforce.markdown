@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "VidForce: Predicting Force-Aware Articulation by Observing Humans"
+date:   2026-11-24 17:03:47 +00:00
+image: /images/papers/gif_vidforce.gif
+categories: research
+authors: "<strong>Rafay Mohiuddin</strong>, Jiaqi Chen, Marc Pollefeys, Hermann Blum"
+subtitle: "Preprint"
+venue: "arXiv:2611.32967"
+paper: https://arxiv.org/abs/2611.32967
+web: https://rafaymhddn.github.io/vidforce/
+---
